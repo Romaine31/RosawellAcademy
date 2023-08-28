@@ -1,0 +1,22 @@
+fileFormatVersion: 2
+guid: 36716d5a94073554195508524e8977bb
+TrueTypeFontImporter:
+  externalObjects: {}
+  serializedVersion: 4
+  fontSize: 16
+  forceTextureCase: -2
+  characterSpacing: 0
+  characterPadding: 1
+  includeFontData: 1
+  fontNames:
+  - Cyrillic Pixel-7
+  fallbackFontReferences:
+  - {fileID: 12800000, guid: a8d3ee13355bf104cb947340e3101cb4, type: 3}
+  customCharacters: 
+  fontRenderingMode: 0
+  ascentCalculationMode: 1
+  useLegacyBoundsCalculation: 0
+  shouldRoundAdvanceValue: 1
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
