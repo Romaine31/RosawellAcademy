@@ -23,7 +23,6 @@ public class dialogueManager : MonoBehaviour
         isActive = true;
         Debug.Log("started conversation! Loaded messages: " + messages.Length);
         DisplayMessage();
-        backgroundBox.LeanScale(Vector3.one, 0.5f);
     }
 
     public void NextMessage()
