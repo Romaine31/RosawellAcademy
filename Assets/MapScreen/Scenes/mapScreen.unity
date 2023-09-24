@@ -136,27 +136,27 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
       propertyPath: camMaxBoundary.x
-      value: 18
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
-      propertyPath: camMaxBoundary.y
-      value: -24
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
-      propertyPath: camMinBoundary.x
-      value: 12
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
-      propertyPath: camMinBoundary.y
-      value: -40
-      objectReference: {fileID: 0}
-    - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
-      propertyPath: playerPosition.x
       value: 15
       objectReference: {fileID: 0}
     - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
+      propertyPath: camMaxBoundary.y
+      value: -6.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
+      propertyPath: camMinBoundary.x
+      value: -3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
+      propertyPath: camMinBoundary.y
+      value: -11
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
+      propertyPath: playerPosition.x
+      value: 2.5
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
       propertyPath: playerPosition.y
-      value: -43.5
+      value: -15
       objectReference: {fileID: 0}
     - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
       propertyPath: cameraStoredPositions

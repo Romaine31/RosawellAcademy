@@ -862,7 +862,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6972140450852342922, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
       propertyPath: m_RootOrder
-      value: 3
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 6972140450852342922, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
       propertyPath: m_LocalPosition.x
@@ -955,7 +955,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: 82d53015c98033044bef9b9bbfda2ddd, type: 2}
     - target: {fileID: 425742005615185175, guid: 9ad928d421bb7094f9801be4b39b2179, type: 3}
       propertyPath: m_RootOrder
-      value: 4
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 425742005615185175, guid: 9ad928d421bb7094f9801be4b39b2179, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2083,6 +2083,11 @@ Tilemap:
     e31: 0
     e32: 0
     e33: 1
+--- !u!20 &951179540 stripped
+Camera:
+  m_CorrespondingSourceObject: {fileID: 425742005615185384, guid: 9ad928d421bb7094f9801be4b39b2179, type: 3}
+  m_PrefabInstance: {fileID: 682451901}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &952431470
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2104,7 +2109,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6224906861109267886, guid: 3ff67d339610bff49953c4aee82ee66a, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 6224906861109267886, guid: 3ff67d339610bff49953c4aee82ee66a, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2169,7 +2174,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6972140450852342922, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
       propertyPath: m_RootOrder
-      value: 1
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 6972140450852342922, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
       propertyPath: m_LocalPosition.x
@@ -2293,7 +2298,7 @@ Canvas:
   m_Enabled: 1
   serializedVersion: 3
   m_RenderMode: 0
-  m_Camera: {fileID: 0}
+  m_Camera: {fileID: 951179540}
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -2302,7 +2307,7 @@ Canvas:
   m_SortingBucketNormalizedSize: 0
   m_AdditionalShaderChannelsFlag: 25
   m_SortingLayerID: 0
-  m_SortingOrder: 0
+  m_SortingOrder: 210
   m_TargetDisplay: 0
 --- !u!224 &1591945319
 RectTransform:
@@ -2957,7 +2962,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 940.6304, y: 75.86963}
+  m_AnchoredPosition: {x: 939.89, y: 80.739}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3601378069784204147
@@ -3242,7 +3247,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 939.8914, y: 24.608765}
+  m_AnchoredPosition: {x: 939.89, y: 25}
   m_SizeDelta: {x: 200, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3601378071721558042
