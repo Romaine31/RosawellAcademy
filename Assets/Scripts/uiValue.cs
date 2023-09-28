@@ -19,11 +19,11 @@ public class uiValue : MonoBehaviour
 
     void updateMoney()
     {
-        moneyText.text = $"Player Money: {pMoney.initialValue:00}";
+        moneyText.text = $"{pMoney.initialValue:00}";
     }
 
     void updateInfluence()
     {
-        influenceText.text = $"Player Influence: {pInfluence.initialValue:00}";
+        influenceText.text = $"{pInfluence.initialValue:00}";
     }
 }
