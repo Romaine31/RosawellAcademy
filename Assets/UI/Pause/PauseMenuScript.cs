@@ -2,6 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
+
 
 public class PauseMenuScript : MonoBehaviour
 {
@@ -27,13 +29,13 @@ public class PauseMenuScript : MonoBehaviour
          if (isPaused)
         {
             Time.timeScale = 0;
-            pauseMenuUI.SetActive(true);
+            PauseMenuUI.SetActive(true);
         }
 
         else
         {
             Time.timeScale = 1;
-            pauseMenuUI.SetActive(false);
+            PauseMenuUI.SetActive(false);
         }
     }
 
