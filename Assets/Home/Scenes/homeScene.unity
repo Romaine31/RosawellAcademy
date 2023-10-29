@@ -2386,6 +2386,7 @@ GameObject:
   - component: {fileID: 2132224135}
   - component: {fileID: 2132224134}
   - component: {fileID: 2132224133}
+  - component: {fileID: 2132224136}
   m_Layer: 0
   m_Name: Triangle
   m_TagString: Untagged
@@ -2474,6 +2475,20 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 8
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2132224136
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2132224132}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32dd042a370f14469db2ea1048ec48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destinations: []
+  currentTime: {fileID: 0}
 --- !u!1 &2143791992
 GameObject:
   m_ObjectHideFlags: 0
@@ -3096,6 +3111,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3601378070200989795}
   - component: {fileID: 3601378070200989796}
+  - component: {fileID: 3601378070200989797}
   m_Layer: 5
   m_Name: PlayerStatsManager
   m_TagString: Untagged
@@ -3139,6 +3155,20 @@ MonoBehaviour:
   pInfluence: {fileID: 11400000, guid: 4c4d49400bd24714a8051aa6e9d2f6e9, type: 2}
   moneyText: {fileID: 3601378069784204147}
   influenceText: {fileID: 3601378071672595019}
+--- !u!114 &3601378070200989797
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3601378070200989794}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32dd042a370f14469db2ea1048ec48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  destinations: []
+  currentTime: {fileID: 11400000, guid: dd1662c691332694c8eb57a5490c74e8, type: 2}
 --- !u!1 &3601378071672595018
 GameObject:
   m_ObjectHideFlags: 0
