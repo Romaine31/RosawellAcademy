@@ -12,7 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 5d7a1b3e479f80d479eb889dfdb3b20d, type: 3}
   m_Name: cameraPosition
   m_EditorClassIdentifier: 
-  initialMinValue: {x: -3, y: -11}
-  initialMaxValue: {x: 15, y: -6.5}
-  defaultMinValue: {x: -3, y: -11}
-  defaultMaxValue: {x: 15, y: -6.5}
+  initialMinValue: {x: -25, y: -11.5}
+  initialMaxValue: {x: 46, y: 4.5}
+  defaultMinValue: {x: -25, y: -11.5}
+  defaultMaxValue: {x: 46, y: 4.5}
