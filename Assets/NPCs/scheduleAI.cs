@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class scheduleAI : MonoBehaviour
 {
+    private Vector2 goalDestination;
     public List<Vector2> destinations = new List<Vector2>();
     public timeValue currentTime;
     public List<int> scheduleTime = new List<int>();
@@ -14,6 +15,7 @@ public class scheduleAI : MonoBehaviour
     {
         nextSchedule = 0;
         currentDestination = 0;
+        goalDestination = destinations[0];
     }
 
     // Update is called once per frame
@@ -23,6 +25,7 @@ public class scheduleAI : MonoBehaviour
             Debug.Log(scheduleTime[nextSchedule]);
             nextSchedule++;
             currentDestination++;
+            goalDestination = destinations[currentDestination];
         }
     }
 }
