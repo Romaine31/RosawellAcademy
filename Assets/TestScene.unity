@@ -587,7 +587,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.083333336
+  m_VoxelSize: 0.33666667
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
   m_NavMeshData: {fileID: 0}
@@ -12751,7 +12751,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.083333336
+  m_VoxelSize: 0.33666667
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
   m_NavMeshData: {fileID: 23800000, guid: 937899bde487aad4a927a3bec6bde1a2, type: 2}
@@ -12780,7 +12780,6 @@ GameObject:
   m_Component:
   - component: {fileID: 1762310253}
   - component: {fileID: 1762310252}
-  - component: {fileID: 1762310254}
   m_Layer: 0
   m_Name: testscheduler
   m_TagString: Untagged
@@ -12800,8 +12799,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32dd042a370f14469db2ea1048ec48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  destinations: []
   currentTime: {fileID: 11400000, guid: dd1662c691332694c8eb57a5490c74e8, type: 2}
+  destination: {fileID: 11400000, guid: 21cc4daf320f5b348b0de5288c266225, type: 2}
   scheduleTime: 01000000050000000a000000
   nextSchedule: 0
   currentDestination: 0
@@ -12820,19 +12819,6 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 13
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1762310254
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1762310251}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 9358ffe1a25a24547b734082e314f128, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  targer: {fileID: 0}
 --- !u!1 &1808500040
 GameObject:
   m_ObjectHideFlags: 0

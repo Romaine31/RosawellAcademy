@@ -1226,7 +1226,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.083333336
+  m_VoxelSize: 0.33666667
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
   m_NavMeshData: {fileID: 0}
@@ -26017,7 +26017,7 @@ MonoBehaviour:
   m_OverrideTileSize: 0
   m_TileSize: 256
   m_OverrideVoxelSize: 0
-  m_VoxelSize: 0.083333336
+  m_VoxelSize: 0.33666667
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
   m_NavMeshData: {fileID: 23800000, guid: 937899bde487aad4a927a3bec6bde1a2, type: 2}
@@ -26047,6 +26047,7 @@ GameObject:
   - component: {fileID: 1762310253}
   - component: {fileID: 1762310252}
   - component: {fileID: 1762310254}
+  - component: {fileID: 1762310255}
   m_Layer: 0
   m_Name: testscheduler
   m_TagString: Untagged
@@ -26099,6 +26100,22 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   targer: {fileID: 0}
+--- !u!114 &1762310255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1762310251}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 226dc38144f41eb43969751cea61cee6, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  messages:
+  - actorId: 0
+    message: 
+  actors: []
 --- !u!1 &1768012373
 GameObject:
   m_ObjectHideFlags: 0
