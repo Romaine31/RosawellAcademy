@@ -5,7 +5,8 @@ using UnityEngine;
 public class scheduleAI : MonoBehaviour
 {
     public timeValue currentTime;
-    public npcDestination destination;
+    //public GameObject scheduleHolder;
+    public npcDestinationDirector destination;
     public List<int> scheduleTime = new List<int>();
     public int nextSchedule;
     public int roomDestinationIndex;
@@ -16,6 +17,8 @@ public class scheduleAI : MonoBehaviour
     {
         nextSchedule = 0;
         roomDestinationIndex = 0;
+        //scheduleHolder = GameObject.FindGameObjectWithTag("npcScheduler");
+        destination = GameObject.FindGameObjectWithTag("npcScheduler").GetComponent<npcDestinationDirector>();
         //goalDestination = destination.npcNumber[0].gameObjectLocations[0].currentDestination.transform.position;
     }
 
@@ -23,9 +26,9 @@ public class scheduleAI : MonoBehaviour
     void Update()
     {
         if(currentTime.Minute == scheduleTime[nextSchedule]){
-            areaDestinationIndex = Random.Range(0, destination.roomNumber[roomDestinationIndex].gameObjectLocations.Count);
+            areaDestinationIndex = Random.Range(0, destination.roomNumber[roomDestinationIndex].gameObjectLocations.Count - 1);
             destinationReference = destination.roomNumber[roomDestinationIndex].gameObjectLocations[areaDestinationIndex].currentDestination;
-            
+
             Debug.Log(scheduleTime[nextSchedule]);
             nextSchedule++;
             roomDestinationIndex++;
