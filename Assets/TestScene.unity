@@ -590,7 +590,7 @@ MonoBehaviour:
   m_VoxelSize: 0.016666668
   m_BuildHeightMesh: 0
   m_HideEditorLogs: 0
-  m_NavMeshData: {fileID: 0}
+  m_NavMeshData: {fileID: 23800000, guid: 39ed97331484f3041a82bee8ffcb0e24, type: 2}
 --- !u!1 &69452663
 GameObject:
   m_ObjectHideFlags: 0
@@ -16349,6 +16349,7 @@ GameObject:
   - component: {fileID: 2142033215}
   - component: {fileID: 2142033214}
   - component: {fileID: 2142033213}
+  - component: {fileID: 2142033217}
   m_Layer: 0
   m_Name: testnpc
   m_TagString: Untagged
@@ -16455,6 +16456,28 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 15
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!195 &2142033217
+NavMeshAgent:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2142033212}
+  m_Enabled: 1
+  m_AgentTypeID: 0
+  m_Radius: 0.5
+  m_Speed: 3.5
+  m_Acceleration: 8
+  avoidancePriority: 50
+  m_AngularSpeed: 120
+  m_StoppingDistance: 0
+  m_AutoTraverseOffMeshLink: 1
+  m_AutoBraking: 1
+  m_AutoRepath: 1
+  m_Height: 1
+  m_BaseOffset: 0.5
+  m_WalkableMask: 4294967295
+  m_ObstacleAvoidanceType: 4
 --- !u!1001 &425742005508928919
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16536,7 +16559,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 425742005615185384, guid: 9ad928d421bb7094f9801be4b39b2179, type: 3}
       propertyPath: orthographic size
-      value: 6
+      value: 15.74
       objectReference: {fileID: 0}
     - target: {fileID: 425742005615185384, guid: 9ad928d421bb7094f9801be4b39b2179, type: 3}
       propertyPath: m_BackGroundColor.b
