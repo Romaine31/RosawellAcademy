@@ -7,12 +7,18 @@ public class scheduleAI : MonoBehaviour
     public timeValue currentTime;
     //public GameObject scheduleHolder;
     public npcDestinationDirector destination;
-    public List<int> scheduleTime = new List<int>();
     public int nextSchedule;
     public int roomDestinationIndex;
     public int areaDestinationIndex;
     public GameObject destinationReference;
+    public bool wanderCheck;
+    public scheduler[] schedule;
     // Start is called before the first frame update
+    [System.Serializable]
+    public class scheduler{
+        public int scheduleTime;
+        public bool allowWander;
+    }
     void Awake()
     {
         nextSchedule = 0;
@@ -23,13 +29,14 @@ public class scheduleAI : MonoBehaviour
     }
 
     // Update is called once per frame
+    
     void Update()
     {
-        if(currentTime.Minute == scheduleTime[nextSchedule]){
-            areaDestinationIndex = Random.Range(0, destination.roomNumber[roomDestinationIndex].gameObjectLocations.Count - 1);
+        if(currentTime.Minute == schedule[nextSchedule].scheduleTime){
+            areaDestinationIndex = Random.Range(0, destination.roomNumber[roomDestinationIndex].gameObjectLocations.Count);
             destinationReference = destination.roomNumber[roomDestinationIndex].gameObjectLocations[areaDestinationIndex].currentDestination;
-
-            Debug.Log(scheduleTime[nextSchedule]);
+            wanderCheck = schedule[nextSchedule].allowWander;
+            Debug.Log(schedule[nextSchedule]);
             nextSchedule++;
             roomDestinationIndex++;
         }
