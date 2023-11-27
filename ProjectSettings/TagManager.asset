@@ -6,6 +6,9 @@ TagManager:
   tags:
   - npcScheduler
   - students
+  - chemical
+  - notChemical
+  - chemicalGoal
   layers:
   - Default
   - TransparentFX
