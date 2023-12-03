@@ -9,6 +9,10 @@ TagManager:
   - chemical
   - notChemical
   - chemicalGoal
+  - animalPrimary
+  - animalSecondary
+  - animalTertiary
+  - animalProducer
   layers:
   - Default
   - TransparentFX
@@ -16,7 +20,7 @@ TagManager:
   - Tilemap
   - Water
   - UI
-  - 
+  - draggableObject
   - 
   - 
   - 

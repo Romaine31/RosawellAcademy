@@ -67,6 +67,7 @@ using System.Collections;
                     if (probManager.playerScore > 0){
                         probManager.playerScore -= 1;
                     }
+                    return true;
                 }
 
 
