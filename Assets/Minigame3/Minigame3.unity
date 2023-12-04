@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34603c82081710408acd3e7a142c3d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g3Manager: {fileID: 1383935284}
+  g3Manager: {fileID: 0}
   spawnTrigger: {fileID: 1383935286}
 --- !u!61 &30791711
 BoxCollider2D:
@@ -657,7 +657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a8e1518f971c94188da32ab0c00f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g3Manager: {fileID: 1383935284}
+  g3Manager: {fileID: 0}
   spawnTrigger: {fileID: 1383935286}
 --- !u!61 &721659224
 BoxCollider2D:
@@ -952,8 +952,9 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 1383935285}
-  - component: {fileID: 1383935284}
   - component: {fileID: 1383935286}
+  - component: {fileID: 1383935288}
+  - component: {fileID: 1383935287}
   m_Layer: 0
   m_Name: minigameManager
   m_TagString: Untagged
@@ -961,19 +962,6 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!114 &1383935284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1383935283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 4defb100dc941c541ab44f1d2cfbe4a3, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  score: 0
 --- !u!4 &1383935285
 Transform:
   m_ObjectHideFlags: 0
@@ -1028,6 +1016,39 @@ MonoBehaviour:
   spriteIndex: 0
   animalClone: {fileID: 0}
   spriteRenderer: {fileID: 0}
+--- !u!114 &1383935287
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383935283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e326c1aa4230594591e69718e381c31, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  scoreValue: 0
+  playerMoney: {fileID: 0}
+  playerInfluence: {fileID: 0}
+--- !u!114 &1383935288
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1383935283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e20e43c72e5d44b40bdfe353df7fff26, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTime: 0
+  startingTime: 10
+  exitMinigame:
+    m_PersistentCalls:
+      m_Calls: []
+  countdownText: {fileID: 0}
 --- !u!1 &1408522060
 GameObject:
   m_ObjectHideFlags: 0
@@ -1366,7 +1387,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d81b90d87484f49ba728495c77e8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g3Manager: {fileID: 1383935284}
+  g3Manager: {fileID: 0}
   spawnTrigger: {fileID: 1383935286}
 --- !u!61 &2005498354
 BoxCollider2D:
@@ -1585,5 +1606,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20dc1e564e4c7c048b5cd5dd0fa7a30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  g3Manager: {fileID: 1383935284}
+  g3Manager: {fileID: 0}
   spawnTrigger: {fileID: 1383935286}

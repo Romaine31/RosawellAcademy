@@ -7,6 +7,7 @@ using System.Collections;
         private bool isDragging;
         private Vector3 offset;
         public problemManager probManager;
+        public ScoreScript scores;
 
         public GameObject chemical3; // The object to be instantiated when collision occurs
         
@@ -56,7 +57,7 @@ using System.Collections;
                     for (int i = 0; i < probManager.cloneList.Count; i++){
                     Destroy(probManager.cloneList[i]);
                     }
-                    probManager.playerScore += 1;
+                    scores.scoreValue += 1;
                     probManager.cloneList = new List<GameObject>();
                     return true;
                 } else if (collider != GetComponent<Collider2D>() && collider.CompareTag("notChemical")){
@@ -64,8 +65,8 @@ using System.Collections;
                     Destroy(probManager.cloneList[i]);
                     }
                     probManager.cloneList = new List<GameObject>();
-                    if (probManager.playerScore > 0){
-                        probManager.playerScore -= 1;
+                    if (scores.scoreValue > 0){
+                        scores.scoreValue -= 1;
                     }
                     return true;
                 }

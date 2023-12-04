@@ -11,7 +11,7 @@ public class npcDetail : ScriptableObject
     public class npcDetails{
         public string name;
         //hi, minor issue, depending on how the sprites are implemented this has to change
-        public Sprite npcImagePlaceholder;
+        public Sprite npcSprite;
         public float multiplier;
         public float admiration;
     }

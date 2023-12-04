@@ -716,6 +716,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e326c1aa4230594591e69718e381c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  scoreValue: 0
   playerMoney: {fileID: 11400000, guid: c1da4617583019b49863be774caec152, type: 2}
   playerInfluence: {fileID: 11400000, guid: 4c4d49400bd24714a8051aa6e9d2f6e9, type: 2}
 --- !u!1 &965393418
@@ -773,6 +774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quizmanager: {fileID: 1640251961}
   isCorrect: 0
+  scores: {fileID: 912895787}
 --- !u!114 &965393421
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1002,6 +1004,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quizmanager: {fileID: 1640251961}
   isCorrect: 0
+  scores: {fileID: 912895787}
 --- !u!114 &1152613533
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1151,6 +1154,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quizmanager: {fileID: 1640251961}
   isCorrect: 0
+  scores: {fileID: 912895787}
 --- !u!114 &1211402894
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1644,6 +1648,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   quizmanager: {fileID: 1640251961}
   isCorrect: 0
+  scores: {fileID: 912895787}
 --- !u!114 &1478354584
 MonoBehaviour:
   m_ObjectHideFlags: 0
