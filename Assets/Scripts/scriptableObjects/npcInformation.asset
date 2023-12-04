@@ -10,15 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f292527985ed83c438dbaeeadf908d06, type: 3}
-  m_Name: TESTFORNPC
+  m_Name: npcInformation
   m_EditorClassIdentifier: 
   npcValues:
   - name: 
-    npcImagePlaceholder: {fileID: 0}
+    npcSprite: {fileID: 0}
     multiplier: 0
-  - name: 
-    npcImagePlaceholder: {fileID: 0}
-    multiplier: 0
-  - name: 
-    npcImagePlaceholder: {fileID: 0}
-    multiplier: 0
+    admiration: 0
