@@ -5,14 +5,12 @@ using UnityEngine;
 public class problemManager : MonoBehaviour
 {
     public List<chemicalSet> chemAns;
-    public int playerScore;
     public GameObject chemPrefab;
     public Vector2[] spawnLocations;
     public List<GameObject> cloneList = new List<GameObject>();
     // Start is called before the first frame update
     void Start()
     {
-        playerScore = 0;
     }
 
     // Update is called once per frame

@@ -4,15 +4,15 @@ using UnityEngine;
 
 public class tierProducer : MonoBehaviour
 {
-    public animalManager g3Manager;
+    public ScoreScript scores;
     public animalSpawner spawnTrigger;
     private void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("animalProducer")){
-            g3Manager.score += 1;
+            scores.scoreValue += 1;
             Destroy(other.gameObject);
             spawnTrigger.spawnAnimal();
         } else if (!other.gameObject.CompareTag("animalProducer")){
-            g3Manager.score -= 1;
+            scores.scoreValue -= 1;
             Destroy(other.gameObject);
             spawnTrigger.spawnAnimal();
         }
