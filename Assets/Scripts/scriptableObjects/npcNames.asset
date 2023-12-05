@@ -12,4 +12,44 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16c8ac9b93233b040923c51af6cbf94a, type: 3}
   m_Name: npcNames
   m_EditorClassIdentifier: 
-  stringVal: []
+  stringVal:
+  - Jethro
+  - Cyrus
+  - Baron
+  - Charles
+  - Howard
+  - Richard
+  - Kalvin
+  - Renbert
+  - Miguel
+  - Rex
+  - Gerson
+  - JD
+  - Joshua
+  - Kenjie
+  - Maverick
+  - Sean
+  - Aaliyah
+  - Clark
+  - Em
+  - Nikko
+  - Meryll
+  - Vea
+  - Kim
+  - Dexter
+  - Ronn
+  - Alvin
+  - Louis
+  - Peter
+  - John
+  - Benedic
+  - Josephine
+  - Emelyn
+  - Jenny
+  - Sheryl
+  - Rolando
+  - Diosdado
+  - Renato
+  - Archie
+  - Hans
+  - Francis
