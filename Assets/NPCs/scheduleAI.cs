@@ -16,7 +16,8 @@ public class scheduleAI : MonoBehaviour
     // Start is called before the first frame update
     [System.Serializable]
     public class scheduler{
-        public int scheduleTime;
+        public int scheduleTimeHour;
+        public int scheduleTimeMinute;
         public bool allowWander;
     }
     void Awake()
@@ -32,7 +33,7 @@ public class scheduleAI : MonoBehaviour
     
     void Update()
     {
-        if(currentTime.Minute == schedule[nextSchedule].scheduleTime){
+        if(currentTime.Hour == schedule[nextSchedule].scheduleTimeHour && currentTime.Hour == schedule[nextSchedule].scheduleTimeHour){
             areaDestinationIndex = Random.Range(0, destination.roomNumber[roomDestinationIndex].gameObjectLocations.Count);
             destinationReference = destination.roomNumber[roomDestinationIndex].gameObjectLocations[areaDestinationIndex].currentDestination;
             wanderCheck = schedule[nextSchedule].allowWander;
