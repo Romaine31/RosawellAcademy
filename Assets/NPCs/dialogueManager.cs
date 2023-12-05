@@ -10,15 +10,15 @@ public class dialogueManager : MonoBehaviour
     public RectTransform backgroundBox;
 
     Message[] currentMessages;
-    Actor[] currentActors;
+    string currentActor;
     public int activeMessage = 0;
     public static bool isActive = false;
 
 
-    public void OpenDialogue(Message[] messages, Actor[] actors)
+    public void OpenDialogue(Message[] messages)
     {
         currentMessages = messages;
-        currentActors = actors;
+        //currentActor = GetComponent<npcDataHolder>().npcCurrentId.ToString();
         activeMessage = 0;
         isActive = true;
         Debug.Log("started conversation! Loaded messages: " + messages.Length);
@@ -28,7 +28,7 @@ public class dialogueManager : MonoBehaviour
     public void NextMessage()
     {
         activeMessage++;
-        if (activeMessage < currentMessages.Length-1)
+        if (activeMessage < currentMessages.Length)
         {
             DisplayMessage();
         }
@@ -44,8 +44,8 @@ public class dialogueManager : MonoBehaviour
         Message messageToDisplay = currentMessages[activeMessage];
         messageText.text = messageToDisplay.message;
 
-        Actor actorToDisplay = currentActors[messageToDisplay.actorId];
-        actorName.text = actorToDisplay.name;
+        //actorName.text = currentActor;
+        actorName.text = "test";
     }
 
     void Start()
