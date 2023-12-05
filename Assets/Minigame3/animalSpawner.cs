@@ -18,7 +18,7 @@ public class animalSpawner : MonoBehaviour
         public List<Sprite> animalImgs;
     }
     public void spawnAnimal(){
-        tagIndex = Random.Range(0,3);
+        tagIndex = Random.Range(0,4);
         spawnArea = new Vector2(Random.Range(-8.5f,-3f),Random.Range(-3.5f,4f));
         animalClone = Instantiate(animalPrefab,spawnArea,Quaternion.identity);
         animalClone.tag = animalTags[tagIndex];
