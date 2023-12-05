@@ -1114,25 +1114,25 @@ MonoBehaviour:
   animalPrefab: {fileID: 5360423870549166587, guid: f0f795d838d117f43957447c4d675110, type: 3}
   animalSprites:
   - animalImgs:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 24b37251aa31f8f40945fd8def7c74c9, type: 3}
+    - {fileID: 21300000, guid: 0558f7ddccdeee7428fa619097434311, type: 3}
+    - {fileID: 21300000, guid: ea9132929d7f6b34ab8e1136a38137b0, type: 3}
+    - {fileID: 21300000, guid: f44675b139b787745bb0c9d21e8d4f0a, type: 3}
   - animalImgs:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 3f24ceea82ecb4545b31f1e942a258f5, type: 3}
+    - {fileID: 21300000, guid: 44992fa510fc3f14dac16e8f0d408490, type: 3}
+    - {fileID: 21300000, guid: 1a37b4cfbe129064999a10ebcbba6110, type: 3}
+    - {fileID: 21300000, guid: f5304e926c0e8b244853ada88fa1ddfc, type: 3}
   - animalImgs:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 0947c70e973910941b411780df1352ed, type: 3}
+    - {fileID: 21300000, guid: 99b6bb24964b1414793690232286a8ba, type: 3}
+    - {fileID: 21300000, guid: 4982c83611a31504bbb3ed53e078374f, type: 3}
+    - {fileID: 21300000, guid: 390a153dc9afe344ab40d750cf22f04d, type: 3}
   - animalImgs:
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
-    - {fileID: 0}
+    - {fileID: 21300000, guid: 7bd4d788492c8bf4eaaa8f128973fb95, type: 3}
+    - {fileID: 21300000, guid: 1b9628e916f819849af6fd66ee923cc6, type: 3}
+    - {fileID: 21300000, guid: 7f9cd757b58910240879a5de3756dc98, type: 3}
+    - {fileID: 21300000, guid: 72aa64f437f9fdc43953825280a65ffc, type: 3}
   spawnArea: {x: 0, y: 0}
   tagIndex: 0
   spriteIndex: 0
