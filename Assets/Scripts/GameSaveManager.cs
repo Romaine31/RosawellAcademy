@@ -21,6 +21,7 @@ public class GameSaveManager : MonoBehaviour
             Destroy(this.gameObject);
         }
         DontDestroyOnLoad(this);
+        Debug.Log(Application.persistentDataPath);
     }
 
     private void OnEnable()

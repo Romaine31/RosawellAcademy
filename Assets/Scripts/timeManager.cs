@@ -6,13 +6,14 @@ using TMPro;
 public class timeManager : MonoBehaviour
 {
     public timeValue worldTime;
-    private float minuteToRealtime = 1f;
+    private float minuteToRealtime = 5f;
     private float timer;
     public TextMeshProUGUI timeText;
 
     void Start()
     {
         timer = minuteToRealtime;
+        UpdateClockUI();
     }
 
     void Update()

@@ -20,6 +20,7 @@ public class Interactable : MonoBehaviour
         {
             if(Input.GetKeyDown(interactKey))
             {
+                GetComponent<AudioSource>().Play();
                 interactAction.Invoke();
             }
         }

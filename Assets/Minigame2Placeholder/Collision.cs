@@ -6,7 +6,8 @@ using System.Collections;
     {
         private bool isDragging;
         private Vector3 offset;
-
+        public problemManager probManager;
+        public ScoreScript scores;
 
         public GameObject chemical3; // The object to be instantiated when collision occurs
         
@@ -48,17 +49,26 @@ using System.Collections;
          {
             // first layer for the cup
 
-                if (collider != GetComponent<Collider2D>() && collider.CompareTag("chemical3")) 
+                if (collider != GetComponent<Collider2D>() && collider.CompareTag("chemicalGoal")) 
                 {
-                    // Instantiate the replacement object at the collision position and rotation
-                    Instantiate(chemical3, collider.transform.position, collider.transform.rotation);
+                    
 
                     // Destroy both the dragged object and the cup object
-                    Destroy(gameObject);
-                    Destroy(collider.gameObject);
-
-
-                    return true; // Collision detected with a Cup object
+                    for (int i = 0; i < probManager.cloneList.Count; i++){
+                    Destroy(probManager.cloneList[i]);
+                    }
+                    scores.scoreValue += 1;
+                    probManager.cloneList = new List<GameObject>();
+                    return true;
+                } else if (collider != GetComponent<Collider2D>() && collider.CompareTag("notChemical")){
+                    for (int i = 0; i < probManager.cloneList.Count; i++){
+                    Destroy(probManager.cloneList[i]);
+                    }
+                    probManager.cloneList = new List<GameObject>();
+                    if (scores.scoreValue > 0){
+                        scores.scoreValue -= 1;
+                    }
+                    return true;
                 }
 
 
