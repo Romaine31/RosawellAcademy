@@ -1847,7 +1847,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &42432460
 MonoBehaviour:
@@ -38940,7 +38940,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1762310254
 MonoBehaviour:
@@ -44783,6 +44783,116 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
+--- !u!1 &7861306841410486218
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 7861306841410486220}
+  - component: {fileID: 7861306841410486223}
+  m_Layer: 0
+  m_Name: npcScheduler
+  m_TagString: npcScheduler
+  m_Icon: {fileID: 5132851093641282708, guid: 0000000000000000d000000000000000, type: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &7861306841410486220
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7861306841410486218}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 20, y: -18.5, z: -0.68732446}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 17
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &7861306841410486223
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7861306841410486218}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903c4d99778c39545aea0a0eb8d9493d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNumber:
+  - gameObjectLocations:
+    - currentDestination: {fileID: 8044110099017172826}
+    - currentDestination: {fileID: 8044110097688686688}
+    - currentDestination: {fileID: 8044110099021293125}
+    - currentDestination: {fileID: 8044110097865445027}
+    - currentDestination: {fileID: 8044110097396934071}
+    - currentDestination: {fileID: 8044110098652829831}
+    - currentDestination: {fileID: 8044110098729527923}
+    - currentDestination: {fileID: 8044110097075815942}
+    - currentDestination: {fileID: 8044110098356171885}
+    - currentDestination: {fileID: 8044110099030857373}
+    - currentDestination: {fileID: 8044110097714728056}
+    - currentDestination: {fileID: 8044110097349823239}
+    - currentDestination: {fileID: 8044110098182642033}
+    - currentDestination: {fileID: 8044110099091167267}
+    - currentDestination: {fileID: 8044110098352445553}
+    - currentDestination: {fileID: 8044110096979513002}
+    - currentDestination: {fileID: 8044110098637370921}
+    - currentDestination: {fileID: 8044110098843007237}
+    - currentDestination: {fileID: 8044110097793645966}
+    - currentDestination: {fileID: 8044110097985108412}
+    - currentDestination: {fileID: 8044110097569737713}
+    - currentDestination: {fileID: 8044110098966394740}
+    - currentDestination: {fileID: 8044110099016160782}
+    - currentDestination: {fileID: 8044110097569585238}
+    - currentDestination: {fileID: 8044110097788408199}
+    - currentDestination: {fileID: 8044110097724957882}
+    - currentDestination: {fileID: 8044110098542620397}
+    - currentDestination: {fileID: 8044110098224132331}
+  - gameObjectLocations:
+    - currentDestination: {fileID: 8044110097412514774}
+    - currentDestination: {fileID: 8044110098877788719}
+    - currentDestination: {fileID: 8044110097351314917}
+    - currentDestination: {fileID: 9146019007157266110}
+    - currentDestination: {fileID: 8399754750579851290}
+    - currentDestination: {fileID: 5025701997681920698}
+    - currentDestination: {fileID: 4787137370624936879}
+  - gameObjectLocations:
+    - currentDestination: {fileID: 8044110098691760603}
+  - gameObjectLocations:
+    - currentDestination: {fileID: 5935620445468266942}
+    - currentDestination: {fileID: 111353442713885794}
+    - currentDestination: {fileID: 1263286236145339117}
+    - currentDestination: {fileID: 7388310158410016062}
+    - currentDestination: {fileID: 6911686400755137710}
+    - currentDestination: {fileID: 1334324710758612834}
+    - currentDestination: {fileID: 4481942473068855924}
+    - currentDestination: {fileID: 3450300629862420127}
+    - currentDestination: {fileID: 3407177323758844520}
+  - gameObjectLocations:
+    - currentDestination: {fileID: 1321090440}
+    - currentDestination: {fileID: 1788900837}
+    - currentDestination: {fileID: 900260354}
+    - currentDestination: {fileID: 2103496903}
+    - currentDestination: {fileID: 46452678}
+    - currentDestination: {fileID: 1147365012}
+    - currentDestination: {fileID: 946740692}
+    - currentDestination: {fileID: 649804813}
+    - currentDestination: {fileID: 1340157982}
+    - currentDestination: {fileID: 605752640}
+    - currentDestination: {fileID: 2042425056}
+    - currentDestination: {fileID: 1723985481}
+    - currentDestination: {fileID: 2131923045}
+    - currentDestination: {fileID: 697208465}
+    - currentDestination: {fileID: 257033743}
 --- !u!1 &8044110096979513002
 GameObject:
   m_ObjectHideFlags: 0
@@ -44878,7 +44988,7 @@ Transform:
   - {fileID: 991321853835727671}
   - {fileID: 891497073}
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &8044110097349823238
 Transform:
