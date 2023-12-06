@@ -13,27 +13,16 @@ public class MilestoneDetection : MonoBehaviour
 
         switch (pInfluence.initialValue){
             case 0:
-                playerLevel.initialValue = 1;
+                playerLevel.initialValue = 0;
                 break;
             case 500:
-                playerLevel.initialValue = 2;
+                playerLevel.initialValue = 1;
                 break;
             case 1000:
-                playerLevel.initialValue = 3;
+                playerLevel.initialValue = 2;
                 break;
         }
 
-        switch (playerLevel.initialValue){
-            case 1:
-                sceneTrigger.selectedScene = "School1";
-                break;
-            case 2:
-                sceneTrigger.selectedScene = "School2";
-                break;
-            case 3:
-                sceneTrigger.selectedScene = "School3";
-                break;
-        }
     }
 
 }

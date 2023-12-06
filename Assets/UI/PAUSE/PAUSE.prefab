@@ -729,6 +729,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 13907230b8903d24794bb42099392941, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  quitEvent:
+    m_PersistentCalls:
+      m_Calls: []
   PauseMenuUI: {fileID: 7130568906861357714}
 --- !u!1 &7130568906861357714
 GameObject:
@@ -745,7 +748,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!224 &7130568906861357715
 RectTransform:
   m_ObjectHideFlags: 0
@@ -996,7 +999,7 @@ GameObject:
   - component: {fileID: 7130568907679843772}
   - component: {fileID: 7130568907679843763}
   m_Layer: 5
-  m_Name: Resume (2)
+  m_Name: settings
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1118,7 +1121,7 @@ GameObject:
   - component: {fileID: 7130568907938118177}
   - component: {fileID: 7130568907938118176}
   m_Layer: 5
-  m_Name: Resume (1)
+  m_Name: quit
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1226,4 +1229,16 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7130568907938118177}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7130568906608405176}
+        m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
+        m_MethodName: Quit
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2

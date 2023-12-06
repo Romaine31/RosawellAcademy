@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5915931164167488453
 SpriteRenderer:
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 47
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -108,11 +108,14 @@ MonoBehaviour:
   destinationReference: {fileID: 0}
   wanderCheck: 0
   schedule:
-  - scheduleTime: 5
+  - scheduleTimeHour: 0
+    scheduleTimeMinute: 0
     allowWander: 0
-  - scheduleTime: 7
+  - scheduleTimeHour: 0
+    scheduleTimeMinute: 0
     allowWander: 1
-  - scheduleTime: 9
+  - scheduleTimeHour: 0
+    scheduleTimeMinute: 0
     allowWander: 0
 --- !u!114 &304377590244742724
 MonoBehaviour:
