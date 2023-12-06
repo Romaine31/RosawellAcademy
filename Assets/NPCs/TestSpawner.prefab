@@ -45,4 +45,5 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   npcPrefab: {fileID: 3787444080118073646, guid: 97faa9b611d4edc42938f3e5ba1187f3, type: 3}
+  spawnAmount: 15
   npcID: {fileID: 11400000, guid: 95b8d7426dd6fa649a9d0a91509f1525, type: 2}

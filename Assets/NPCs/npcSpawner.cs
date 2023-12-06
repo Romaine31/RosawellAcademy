@@ -5,6 +5,7 @@ using UnityEngine;
 public class npcSpawner : MonoBehaviour
 {
     public GameObject npcPrefab;
+    public int spawnAmount;
     public intValue npcID;
     
     // Start is called before the first frame update
@@ -13,7 +14,7 @@ public class npcSpawner : MonoBehaviour
     }
     void Start()
     {
-            for (int x = 0; x< 15; x++){
+            for (int x = 0; x < spawnAmount; x++){
                 Instantiate(npcPrefab, transform.position, Quaternion.identity);
                 Debug.Log("npc count: "+x);
                 npcID.initialValue++;

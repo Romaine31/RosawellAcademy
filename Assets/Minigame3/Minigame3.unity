@@ -257,6 +257,10 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
+      propertyPath: selectedScene
+      value: School3
+      objectReference: {fileID: 0}
+    - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
       propertyPath: cameraStoredPositions
       value: 
       objectReference: {fileID: 11400000, guid: 82d53015c98033044bef9b9bbfda2ddd, type: 2}

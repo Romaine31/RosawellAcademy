@@ -1452,7 +1452,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
       propertyPath: selectedScene
-      value: School1
+      value: School2
       objectReference: {fileID: 0}
     - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
       propertyPath: cameraStoredPositions
