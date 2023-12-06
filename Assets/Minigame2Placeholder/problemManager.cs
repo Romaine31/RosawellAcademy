@@ -10,6 +10,8 @@ public class problemManager : MonoBehaviour
     public Vector2[] spawnLocations;
     public List<GameObject> cloneList = new List<GameObject>();
     public List<Text> textObjects;
+    public GameObject q1;
+    public GameObject q2;
     // Start is called before the first frame update
     void Start()
     {
@@ -53,9 +55,11 @@ public class problemManager : MonoBehaviour
             } else if (chemAns[questionPicker].correctAns[i] == 2){
                 cloneList[i].tag = "chemical";
                 cloneList[i].GetComponent<Renderer>().material.color = chemAns[questionPicker].colour2;
-            } else {cloneList[i].tag = "notChemical";}
+            } else {cloneList[i].tag = "notChemical"; cloneList[i].GetComponent<Renderer>().material.color = Random.ColorHSV(0f, 1f, 1f, 1f, 1f, 0.5f, 1f, 1f); }
         }
         setQuestion(questionPicker);
+        q1.GetComponent<Renderer>().material.color = chemAns[questionPicker].colour1;
+        q2.GetComponent<Renderer>().material.color = chemAns[questionPicker].colour2;
     }
 
     void setQuestion(int qPicker)
