@@ -11,7 +11,7 @@ public class npcDataHolder : MonoBehaviour
     public string npcName;
     public Sprite npcImage;
     private int nameRand;
-    public SpriteRenderer spriteRenderer;
+    // public AnimatorController npcAnimator;
     void OnEnable()
     {
         npcCurrentId = npcId.initialValue;
@@ -26,8 +26,8 @@ public class npcDataHolder : MonoBehaviour
     }
 
     public void npcSelectSprite(){
-        spriteRenderer = GetComponent<SpriteRenderer>();
-        spriteRenderer.sprite = npcInfo.npcValues[npcCurrentId].npcSprite;
+        //npcAnimator = GetComponent<Animator>();
+        //npcAnimator.Controller = npcInfo.npcValues[npcCurrentId].animator;
     }
     // Update is called once per frame
     void Update()
