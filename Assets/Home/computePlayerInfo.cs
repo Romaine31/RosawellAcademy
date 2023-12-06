@@ -17,8 +17,23 @@ public class computePlayerInfo : MonoBehaviour
             {
                 totalNpcMultiplier += npcValues.npcValues[i].multiplier;
             }
-            totalNpcMultiplier /= 8;
-        }  
+            totalNpcMultiplier *= 0.2f;
+        } else if (currentLvl.initialValue == 1) {
+            for (int i = 0; i < npcValues.npcValues.Length; i++)
+            {
+                totalNpcMultiplier += npcValues.npcValues[i].multiplier;
+            }
+            totalNpcMultiplier *= 0.4f;
+        } else if (currentLvl.initialValue == 2) {
+            for (int i = 0; i < npcValues.npcValues.Length; i++)
+            {
+                totalNpcMultiplier += npcValues.npcValues[i].multiplier;
+            }
+            totalNpcMultiplier *= 0.5f;
+        }
+
+        pInfluence.initialValue *= totalNpcMultiplier;
+        pCurrency.initialValue = (int)pInfluence.initialValue/2;  
     }
 
     void Update()

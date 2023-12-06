@@ -19,8 +19,7 @@ public class levelCheck : MonoBehaviour
 
     void Update()
     {
-        sceneSwitcher.selectedScene = lvlDetail.levelInfo[0].sceneName;
-        //add spawn position
-        //add camera boundaries
+        sceneSwitcher.selectedScene = lvlDetail.levelInfo[currentLvl.initialValue].sceneName;
+        //sceneSwitcher
     }
 }
