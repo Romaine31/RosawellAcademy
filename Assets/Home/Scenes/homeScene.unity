@@ -123,6 +123,54 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &112247185
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 112247187}
+  - component: {fileID: 112247186}
+  m_Layer: 0
+  m_Name: GameObject
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &112247186
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112247185}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0afc7144b3d0304189791ce8de157cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcInfo: {fileID: 11400000, guid: 919b517285ff8ed4185307c4ac4a27db, type: 2}
+  animStorage: {fileID: 11400000, guid: 2767f585a4c8d224ea3ec7f42d3ea227, type: 2}
+  namesStorage: {fileID: 11400000, guid: d87ddefffaa2570439c0c60954a85d6e, type: 2}
+  npcsSpawned: {fileID: 11400000, guid: 1ae1a1f74c4705a47ab3875817e3b943, type: 2}
+--- !u!4 &112247187
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 112247185}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -1.5082414, y: -1.5623447, z: -0.036121935}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 10
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &140175521
 GameObject:
   m_ObjectHideFlags: 0

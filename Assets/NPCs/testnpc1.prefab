@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 304377590244742724}
   - component: {fileID: 3579418060379275094}
   - component: {fileID: 8053553708193514286}
+  - component: {fileID: -4786805556879547919}
   m_Layer: 0
-  m_Name: testnpc
+  m_Name: testnpc1
   m_TagString: students
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -108,15 +109,15 @@ MonoBehaviour:
   destinationReference: {fileID: 0}
   wanderCheck: 0
   schedule:
-  - scheduleTimeHour: 0
+  - scheduleTimeHour: 7
     scheduleTimeMinute: 0
     allowWander: 0
-  - scheduleTimeHour: 0
+  - scheduleTimeHour: 10
     scheduleTimeMinute: 0
+    allowWander: 0
+  - scheduleTimeHour: 10
+    scheduleTimeMinute: 3
     allowWander: 1
-  - scheduleTimeHour: 0
-    scheduleTimeMinute: 0
-    allowWander: 0
 --- !u!114 &304377590244742724
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -171,4 +172,25 @@ MonoBehaviour:
   npcCurrentId: 0
   npcName: 
   npcImage: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  npcAnimator: {fileID: 0}
+--- !u!95 &-4786805556879547919
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973976251438184663}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0

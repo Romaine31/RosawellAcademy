@@ -6639,6 +6639,7 @@ GameObject:
   - component: {fileID: 942247544}
   - component: {fileID: 942247543}
   - component: {fileID: 942247542}
+  - component: {fileID: 942247546}
   m_Layer: 5
   m_Name: Canvas
   m_TagString: Untagged
@@ -6730,6 +6731,22 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!114 &942247546
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 942247541}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: b0afc7144b3d0304189791ce8de157cf, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  npcInfo: {fileID: 0}
+  animStorage: {fileID: 0}
+  namesStorage: {fileID: 0}
+  npcsSpawned: {fileID: 0}
 --- !u!1 &950321986
 GameObject:
   m_ObjectHideFlags: 0
@@ -16832,7 +16849,7 @@ MonoBehaviour:
   npcCurrentId: 0
   npcName: 
   npcImage: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  npcAnimator: {fileID: 0}
 --- !u!114 &1857570440085513167
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16851,7 +16868,7 @@ MonoBehaviour:
   npcCurrentId: 0
   npcName: 
   npcImage: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  npcAnimator: {fileID: 0}
 --- !u!114 &1972702099491078314
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -16884,7 +16901,7 @@ MonoBehaviour:
   npcCurrentId: 0
   npcName: 
   npcImage: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  npcAnimator: {fileID: 0}
 --- !u!1001 &2255943304241169130
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -16902,7 +16919,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2255943306003217028, guid: cc64a958e34a96a40955047eb2aa6a7f, type: 3}
       propertyPath: roomNumber.Array.data[0].gameObjectLocations.Array.size
-      value: 0
+      value: 2
       objectReference: {fileID: 0}
     - target: {fileID: 2255943306003217031, guid: cc64a958e34a96a40955047eb2aa6a7f, type: 3}
       propertyPath: m_RootOrder
@@ -16910,11 +16927,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 2255943306003217031, guid: cc64a958e34a96a40955047eb2aa6a7f, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 20
+      value: 16.65
       objectReference: {fileID: 0}
     - target: {fileID: 2255943306003217031, guid: cc64a958e34a96a40955047eb2aa6a7f, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -18.5
+      value: -18.15
       objectReference: {fileID: 0}
     - target: {fileID: 2255943306003217031, guid: cc64a958e34a96a40955047eb2aa6a7f, type: 3}
       propertyPath: m_LocalPosition.z
@@ -16950,6 +16967,44 @@ PrefabInstance:
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: cc64a958e34a96a40955047eb2aa6a7f, type: 3}
+--- !u!1 &2255943304241169131 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2255943306003217025, guid: cc64a958e34a96a40955047eb2aa6a7f, type: 3}
+  m_PrefabInstance: {fileID: 2255943304241169130}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &2255943304241169132
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2255943304241169131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c32dd042a370f14469db2ea1048ec48d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  currentTime: {fileID: 0}
+  destination: {fileID: 0}
+  nextSchedule: 0
+  roomDestinationIndex: 0
+  areaDestinationIndex: 0
+  destinationReference: {fileID: 0}
+  wanderCheck: 0
+  schedule: []
+--- !u!114 &2255943304241169133
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2255943304241169131}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 903c4d99778c39545aea0a0eb8d9493d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  roomNumber: []
 --- !u!4 &2532036186556104994
 Transform:
   m_ObjectHideFlags: 0
@@ -16963,7 +17018,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 20
+  m_RootOrder: 21
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2551616382671823563
 SpriteRenderer:
@@ -17082,7 +17137,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 18
+  m_RootOrder: 19
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2681886991899344378
 SpriteRenderer:
@@ -17149,7 +17204,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 17
+  m_RootOrder: 18
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &2836438812220386452
 SpriteRenderer:
@@ -17713,7 +17768,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 19
+  m_RootOrder: 20
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &6038571816519514416
 MonoBehaviour:
@@ -17762,7 +17817,7 @@ MonoBehaviour:
   npcCurrentId: 0
   npcName: 
   npcImage: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  npcAnimator: {fileID: 0}
 --- !u!114 &6412683790183166535
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -17867,7 +17922,7 @@ MonoBehaviour:
   npcCurrentId: 0
   npcName: 
   npcImage: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  npcAnimator: {fileID: 0}
 --- !u!114 &6935914600973877120
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18046,7 +18101,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 21
+  m_RootOrder: 22
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7203147641214466193
 Animator:
@@ -18134,7 +18189,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 22
+  m_RootOrder: 23
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!95 &7549585902567601128
 Animator:
@@ -18175,7 +18230,7 @@ MonoBehaviour:
   npcCurrentId: 0
   npcName: 
   npcImage: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  npcAnimator: {fileID: 0}
 --- !u!114 &8114034865471641024
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18194,7 +18249,7 @@ MonoBehaviour:
   npcCurrentId: 0
   npcName: 
   npcImage: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  npcAnimator: {fileID: 0}
 --- !u!114 &8231964232985818789
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -18342,6 +18397,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   animator: {fileID: 9021249629477369700}
+  target: {x: 0, y: 0, z: 0}
+  oldTarget: {x: 0, y: 0, z: 0}
 --- !u!95 &9021249629477369700
 Animator:
   serializedVersion: 5

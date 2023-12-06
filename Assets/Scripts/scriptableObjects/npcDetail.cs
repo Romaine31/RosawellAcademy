@@ -13,6 +13,6 @@ public class npcDetail : ScriptableObject
         //hi, minor issue, depending on how the sprites are implemented this has to chang
         public float multiplier;
         public float admiration;
-        public Animator animator;
+        public RuntimeAnimatorController animController;
     }
 }

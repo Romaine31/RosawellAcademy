@@ -16,6 +16,10 @@ using System.Collections;
         {
             offset = Vector3.zero; // Initialize the offset to zero
         }
+        void OnEnable() {
+            probManager = GameObject.FindWithTag("chemGameManager").GetComponent<problemManager>();
+            scores = GameObject.FindWithTag("scoreText").GetComponent<ScoreScript>();
+        }
 
         void Update()
         {
