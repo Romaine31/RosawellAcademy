@@ -11,7 +11,7 @@ public class Interactable : MonoBehaviour
 
     void Start()
     {
-        
+        interactKey = KeyCode.E;
     }
 
     void Update() // interacts

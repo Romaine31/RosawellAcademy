@@ -13,6 +13,8 @@ TagManager:
   - animalSecondary
   - animalTertiary
   - animalProducer
+  - chemGameManager
+  - scoreText
   layers:
   - Default
   - TransparentFX

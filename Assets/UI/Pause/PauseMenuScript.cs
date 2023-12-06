@@ -39,15 +39,4 @@ public class PauseMenuScript : MonoBehaviour
         }
     }
 
-     public void OnResumeButtonClick()
-    {
-        // Unpause the game.
-        isPaused = false;
-    }
-
-    public void OnMenuButtonClick()
-    {
-        // Load the main menu scene.
-        SceneManager.LoadScene("MainMenu");
-    }
 }

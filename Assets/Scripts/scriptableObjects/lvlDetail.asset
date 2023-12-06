@@ -13,7 +13,15 @@ MonoBehaviour:
   m_Name: lvlDetail
   m_EditorClassIdentifier: 
   levelInfo:
-  - sceneName: 
-    playerSpawnPosition: {x: 0, y: 0}
-    minBoundary: {x: 0, y: 0}
-    maxBoundary: {x: 0, y: 0}
+  - sceneName: School1
+    playerSpawnPosition: {x: 2.6, y: -14.8}
+    minBoundary: {x: -4.3, y: -12.4}
+    maxBoundary: {x: 16.5, y: 6.35}
+  - sceneName: School2
+    playerSpawnPosition: {x: 2.6, y: -14.8}
+    minBoundary: {x: -22.25, y: -12.45}
+    maxBoundary: {x: 44.3, y: 8.85}
+  - sceneName: School3
+    playerSpawnPosition: {x: 2.6, y: -14.8}
+    minBoundary: {x: -22.25, y: -12.45}
+    maxBoundary: {x: 44.3, y: 8.85}

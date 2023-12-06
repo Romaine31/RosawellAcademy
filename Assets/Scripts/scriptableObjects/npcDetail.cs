@@ -10,9 +10,9 @@ public class npcDetail : ScriptableObject
     [System.Serializable]
     public class npcDetails{
         public string name;
-        //hi, minor issue, depending on how the sprites are implemented this has to change
-        public Sprite npcSprite;
+        //hi, minor issue, depending on how the sprites are implemented this has to chang
         public float multiplier;
         public float admiration;
+        public RuntimeAnimatorController animController;
     }
 }

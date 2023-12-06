@@ -4,20 +4,16 @@ using UnityEngine;
 
 public class areaToggle : MonoBehaviour
 {
-    public boolValue barricadestatus;
-    public intValue playerMoney;
+    public boolList itemsBought;
+    public List<GameObject> itemList;
     // Start is called before the first frame update
     void Start()
     {
-        if (barricadestatus.initialValue == false)
-        {
-            removeBarricade();
+        for (int x = 0; x <itemsBought.storeItem.Count; x++){
+            if (itemsBought.storeItem[x] == true && itemList[x] != null){
+                itemList[x].SetActive(true);
+            }
         }
     }
 
-    public void removeBarricade()
-    {
-        barricadestatus.initialValue = false;
-        Destroy(gameObject);
-    }
 }

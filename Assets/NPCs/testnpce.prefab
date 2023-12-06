@@ -14,8 +14,9 @@ GameObject:
   - component: {fileID: 304377590244742724}
   - component: {fileID: 3579418060379275094}
   - component: {fileID: 8053553708193514286}
+  - component: {fileID: -4786805556879547919}
   m_Layer: 0
-  m_Name: testnpc
+  m_Name: testnpce
   m_TagString: students
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -34,7 +35,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 16
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!212 &5915931164167488453
 SpriteRenderer:
@@ -78,7 +79,7 @@ SpriteRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 47
   m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
-  m_Color: {r: 1, g: 0, b: 0, a: 1}
+  m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
   m_DrawMode: 0
@@ -108,11 +109,20 @@ MonoBehaviour:
   destinationReference: {fileID: 0}
   wanderCheck: 0
   schedule:
-  - scheduleTime: 5
+  - scheduleTimeHour: 7
+    scheduleTimeMinute: 0
     allowWander: 0
-  - scheduleTime: 7
+  - scheduleTimeHour: 10
+    scheduleTimeMinute: 0
+    allowWander: 0
+  - scheduleTimeHour: 10
+    scheduleTimeMinute: 3
     allowWander: 1
-  - scheduleTime: 9
+  - scheduleTimeHour: 12
+    scheduleTimeMinute: 0
+    allowWander: 0
+  - scheduleTimeHour: 2
+    scheduleTimeMinute: 0
     allowWander: 0
 --- !u!114 &304377590244742724
 MonoBehaviour:
@@ -128,6 +138,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCurrentlyWandering: 0
   walkRadius: 20
+  animator: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
+  npcInfo: {fileID: 0}
 --- !u!195 &3579418060379275094
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -162,10 +175,29 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30eff58b5e716ed4b9d2c0bfdd72d62b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  namesDatabase: {fileID: 11400000, guid: d87ddefffaa2570439c0c60954a85d6e, type: 2}
   npcId: {fileID: 11400000, guid: 95b8d7426dd6fa649a9d0a91509f1525, type: 2}
   npcInfo: {fileID: 11400000, guid: 919b517285ff8ed4185307c4ac4a27db, type: 2}
   npcCurrentId: 0
   npcName: 
-  npcImage: {fileID: 0}
-  spriteRenderer: {fileID: 0}
+  npcAnimator: {fileID: 0}
+--- !u!95 &-4786805556879547919
+Animator:
+  serializedVersion: 5
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8973976251438184663}
+  m_Enabled: 1
+  m_Avatar: {fileID: 0}
+  m_Controller: {fileID: 0}
+  m_CullingMode: 0
+  m_UpdateMode: 0
+  m_ApplyRootMotion: 0
+  m_LinearVelocityBlending: 0
+  m_StabilizeFeet: 0
+  m_WarningMessage: 
+  m_HasTransformHierarchy: 1
+  m_AllowConstantClipSamplingOptimization: 1
+  m_KeepAnimatorStateOnDisable: 0
+  m_WriteDefaultValuesOnDisable: 0
