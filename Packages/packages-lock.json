@@ -8,7 +8,11 @@
       "hash": "4f4966ff65ec4ca4dbe76fdbefcef9e89d009375"
     },
     "com.unity.2d.animation": {
+<<<<<<< HEAD
       "version": "9.0.3",
+=======
+      "version": "7.0.11",
+>>>>>>> origin/character-2
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -90,7 +94,11 @@
       }
     },
     "com.unity.2d.tilemap.extras": {
+<<<<<<< HEAD
       "version": "3.1.0",
+=======
+      "version": "2.2.6",
+>>>>>>> origin/character-2
       "depth": 1,
       "source": "registry",
       "dependencies": {
@@ -148,13 +156,21 @@
       "depth": 0,
       "source": "builtin",
       "dependencies": {
+<<<<<<< HEAD
         "com.unity.2d.animation": "9.0.3",
+=======
+        "com.unity.2d.animation": "7.0.11",
+>>>>>>> origin/character-2
         "com.unity.2d.pixel-perfect": "5.0.3",
         "com.unity.2d.psdimporter": "8.0.2",
         "com.unity.2d.sprite": "1.0.0",
         "com.unity.2d.spriteshape": "9.0.2",
         "com.unity.2d.tilemap": "1.0.0",
+<<<<<<< HEAD
         "com.unity.2d.tilemap.extras": "3.1.0",
+=======
+        "com.unity.2d.tilemap.extras": "2.2.6",
+>>>>>>> origin/character-2
         "com.unity.2d.aseprite": "1.0.0"
       }
     },

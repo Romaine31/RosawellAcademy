@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 3
+    serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    buildHeightMesh: 0
+    accuratePlacement: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -322,17 +322,9 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -543,7 +535,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
@@ -631,9 +622,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
 --- !u!1 &912895783
 GameObject:
@@ -809,7 +797,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.41509432, g: 0.41509432, b: 0.41509432, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1039,7 +1027,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.41568628, g: 0.41568628, b: 0.41568628, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.41568628, g: 0.41568628, b: 0.41568628, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1189,7 +1177,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.41568628, g: 0.41568628, b: 0.41568628, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.41568628, g: 0.41568628, b: 0.41568628, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1683,7 +1671,7 @@ MonoBehaviour:
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
     m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.41568628, g: 0.41568628, b: 0.41568628, a: 1}
+    m_PressedColor: {r: 1, g: 1, b: 1, a: 1}
     m_SelectedColor: {r: 0.41568628, g: 0.41568628, b: 0.41568628, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1
@@ -1847,8 +1835,7 @@ MonoBehaviour:
     timertext: {fileID: 0}
     CorrectAnswer: 2
   - questionImage: {fileID: 21300000, guid: a9e09a65fadd31a4983965bbfa5f0e7e, type: 3}
-    Question: The function of the lung is to get oxygen from the air to the blood,
-      performed by the alveoli.
+    Question: It gets oxygen from the air to the blood, performed by the alveoli.
     Answer:
     - Stomach
     - Brain
@@ -1857,17 +1844,175 @@ MonoBehaviour:
     scoretext: {fileID: 0}
     timertext: {fileID: 0}
     CorrectAnswer: 3
-  - questionImage: {fileID: 21300000, guid: ff9432daa4621a746b820e975c692a0a, type: 3}
+  - questionImage: {fileID: 21300000, guid: b188603a5b840d64a9af168bd5a1f820, type: 3}
+    Question: I have two lenses and help you see, but I'm not a pair of binoculars.
+      What am I?
+    Answer:
+    - Eyes
+    - Kidney
+    - Lungs
+    - Testicles
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 1
+  - questionImage: {fileID: 21300000, guid: 18864baf9ec20774bbcb8a6183474559, type: 3}
+    Question: What is the largest organ in the human body?
+    Answer:
+    - Stomach
+    - Kidney
+    - Liver
+    - Skin
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 4
+  - questionImage: {fileID: 21300000, guid: 8e3ffeba9cc3add4fafce393208268fb, type: 3}
+    Question: ' It carries food from the mouth to the stomach.'
+    Answer:
+    - Esophagus
+    - Large Intestine
+    - Small Intestine
+    - Liver
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 1
+  - questionImage: {fileID: 21300000, guid: b3770845a9484cd4c9d23b071a79a9db, type: 3}
     Question: ' It is an important organ and the most dilated portion of the digestive
       system.'
     Answer:
     - Stomach
-    - Brain
-    - Lungs
-    - Heart
+    - Appendix
+    - Gallbladder
+    - Pancreas
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 3
+  - questionImage: {fileID: 21300000, guid: fe0108419ff2a5143a714622173a8843, type: 3}
+    Question: Which bone protects the brain?
+    Answer:
+    - Tail bone
+    - Spinal Cord
+    - Ribs
+    - Skull
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 4
+  - questionImage: {fileID: 21300000, guid: bf2ad0d052f19b1469e060069b387330, type: 3}
+    Question: It filters waste products from the blood and produce urine.
+    Answer:
+    - Kidney
+    - Gallbladder
+    - Appendix
+    - Testicles
     scoretext: {fileID: 0}
     timertext: {fileID: 0}
     CorrectAnswer: 1
+  - questionImage: {fileID: 21300000, guid: f1d09e51eafbadd43b32e91c59d7568b, type: 3}
+    Question: Which part of the female reproductive system is responsible for producing
+      eggs?
+    Answer:
+    - Testicles
+    - Ovaries
+    - Liver
+    - Stomach
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 2
+  - questionImage: {fileID: 21300000, guid: 73a738c229fd64b4595749323e5469a1, type: 3}
+    Question: Which part of the central nervous system is responsible for relaying
+      sensory information to the brain?
+    Answer:
+    - Spinal Cord
+    - Ribs
+    - Collar Bone
+    - Knee Cap
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 1
+  - questionImage: {fileID: 21300000, guid: cde8b4557d1c2774886e03fb6f500280, type: 3}
+    Question: Which organ is responsible for filtering and detoxifying blood?
+    Answer:
+    - Appendix
+    - Kidney
+    - Heart
+    - Liver
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 4
+  - questionImage: {fileID: 21300000, guid: 2da8ddef40e9d384793be57fe84e3a56, type: 3}
+    Question: Which organ produces insulin to regulate blood sugar levels?
+    Answer:
+    - Stomach
+    - Lungs
+    - Liver
+    - Pancreas
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 4
+  - questionImage: {fileID: 21300000, guid: d693d0ff584a8194592a05bae9ec839a, type: 3}
+    Question: Which part of the skeletal system protects the spinal cord?
+    Answer:
+    - Vertebrae
+    - Ribs
+    - Tail Bone
+    - Ligaments
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 1
+  - questionImage: {fileID: 21300000, guid: e200d7e7e59c98c41af9b3dfc6dfc507, type: 3}
+    Question: I break down food and help you absorb nutrients, but I'm not a blender.
+      What am I?
+    Answer:
+    - Stomach
+    - Large Intestine
+    - Small Intestine
+    - Heart
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 3
+  - questionImage: {fileID: 21300000, guid: e200d7e7e59c98c41af9b3dfc6dfc507, type: 3}
+    Question: I store waste and help your body get rid of it, but I'm not a trash
+      can. What am I?
+    Answer:
+    - Lungs
+    - Small Intestine
+    - Large Intestine
+    - Kidneys
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 3
+  - questionImage: {fileID: 21300000, guid: f1d09e51eafbadd43b32e91c59d7568b, type: 3}
+    Question: I'm a muscular sac and hold a baby during pregnancy, but I'm not a
+      kangaroo pouch. What am I?
+    Answer:
+    - Uterus
+    - Gallbladder
+    - Kidneys
+    - Ovaries
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 1
+  - questionImage: {fileID: 21300000, guid: 161fa7913d4ee4444a975da94754b313, type: 3}
+    Question: Which part of the skeletal system is responsible for producing blood
+      cells in adults?
+    Answer:
+    - Skull
+    - Bone Marrow
+    - Spinal Cord
+    - patella
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 2
+  - questionImage: {fileID: 21300000, guid: e33f83fcc24bd03469fa110bb4d78917, type: 3}
+    Question: ' It is an important organ and the most dilated portion of the digestive
+      system.'
+    Answer:
+    - Skull
+    - Pelvic floor
+    - Collar Bone
+    - Spinal Cord
+    scoretext: {fileID: 0}
+    timertext: {fileID: 0}
+    CorrectAnswer: 2
   options:
   - {fileID: 965393418}
   - {fileID: 1478354581}
@@ -2119,9 +2264,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 0
   m_SortingOrder: 0
   m_TargetDisplay: 0
