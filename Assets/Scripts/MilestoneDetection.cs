@@ -6,7 +6,6 @@ public class MilestoneDetection : MonoBehaviour
 {
     public intValue playerLevel;
     public floatValue pInfluence;
-    public switchScene sceneTrigger;
 
     void Start()
     {
@@ -15,11 +14,14 @@ public class MilestoneDetection : MonoBehaviour
             case 0:
                 playerLevel.initialValue = 0;
                 break;
-            case 500:
+            case 200:
                 playerLevel.initialValue = 1;
                 break;
-            case 1000:
+            case 700:
                 playerLevel.initialValue = 2;
+                break;
+            case 1300:
+                playerLevel.initialValue = 3;
                 break;
         }
 

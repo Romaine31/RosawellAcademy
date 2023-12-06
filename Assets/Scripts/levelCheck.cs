@@ -9,7 +9,7 @@ public class levelCheck : MonoBehaviour
     public switchScene sceneSwitcher;
     void Awake()
     {
-        sceneSwitcher = GetComponent<switchScene>();
+
     }
 
     private void Start()
@@ -20,6 +20,8 @@ public class levelCheck : MonoBehaviour
     void Update()
     {
         sceneSwitcher.selectedScene = lvlDetail.levelInfo[currentLvl.initialValue].sceneName;
-        //sceneSwitcher
+        sceneSwitcher.playerPosition = lvlDetail.levelInfo[currentLvl.initialValue].playerSpawnPosition;
+        sceneSwitcher.camMinBoundary = lvlDetail.levelInfo[currentLvl.initialValue].minBoundary;
+        sceneSwitcher.camMaxBoundary = lvlDetail.levelInfo[currentLvl.initialValue].maxBoundary;
     }
 }

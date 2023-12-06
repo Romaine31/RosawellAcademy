@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class areaToggle : MonoBehaviour
+public class storePurchaes : MonoBehaviour
 {
     public boolList itemsBought;
     public List<GameObject> itemList;
@@ -10,8 +10,8 @@ public class areaToggle : MonoBehaviour
     void Start()
     {
         for (int x = 0; x <itemsBought.storeItem.Count; x++){
-            if (itemsBought.storeItem[x] == true && itemList[x] != null){
-                itemList[x].SetActive(true);
+            if (itemsBought.storeItem[x] == true){
+                Destroy(itemList[x]);
             }
         }
     }
