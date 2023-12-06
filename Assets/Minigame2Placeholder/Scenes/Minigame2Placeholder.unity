@@ -104,7 +104,7 @@ NavMeshSettings:
   serializedVersion: 2
   m_ObjectHideFlags: 0
   m_BuildSettings:
-    serializedVersion: 3
+    serializedVersion: 2
     agentTypeID: 0
     agentRadius: 0.5
     agentHeight: 2
@@ -117,7 +117,7 @@ NavMeshSettings:
     cellSize: 0.16666667
     manualTileSize: 0
     tileSize: 256
-    buildHeightMesh: 0
+    accuratePlacement: 0
     maxJobWorkers: 0
     preserveTilesOutsideBounds: 0
     debug:
@@ -231,17 +231,9 @@ Camera:
   m_projectionMatrixMode: 1
   m_GateFitMode: 2
   m_FOVAxisMode: 0
-  m_Iso: 200
-  m_ShutterSpeed: 0.005
-  m_Aperture: 16
-  m_FocusDistance: 10
-  m_FocalLength: 50
-  m_BladeCount: 5
-  m_Curvature: {x: 2, y: 11}
-  m_BarrelClipping: 0.25
-  m_Anamorphism: 0
   m_SensorSize: {x: 36, y: 24}
   m_LensShift: {x: 0, y: 0}
+  m_FocalLength: 50
   m_NormalizedViewPortRect:
     serializedVersion: 2
     x: 0
@@ -434,25 +426,6 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
@@ -498,40 +471,21 @@ BoxCollider2D:
   m_Enabled: 1
   m_Density: 1
   m_Material: {fileID: 0}
-  m_IncludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_ExcludeLayers:
-    serializedVersion: 2
-    m_Bits: 0
-  m_LayerOverridePriority: 0
-  m_ForceSendLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ForceReceiveLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_ContactCaptureLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
-  m_CallbackLayers:
-    serializedVersion: 2
-    m_Bits: 4294967295
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.0084815025, y: 0.12651873}
+  m_Offset: {x: -0.16589403, y: -0.0066764355}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.28866667}
-    oldSize: {x: 1, y: 1}
+    pivot: {x: 0.5, y: 0.5}
+    oldSize: {x: 1.92, y: 1.6}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
   serializedVersion: 2
-  m_Size: {x: 0.5080757, y: 0.42326164}
+  m_Size: {x: 0.5322933, y: 1.4403882}
   m_EdgeRadius: 0
 --- !u!212 &644272310
 SpriteRenderer:
@@ -574,7 +528,7 @@ SpriteRenderer:
   m_SortingLayerID: 1695050747
   m_SortingLayer: 0
   m_SortingOrder: 3
-  m_Sprite: {fileID: 7482667652216324306, guid: 75f5f34dc1b5347e0b8351032682f224, type: 3}
+  m_Sprite: {fileID: 21300000, guid: ebd8923be1376ac43a3ded5eb846bf71, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -646,7 +600,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1451340383}
-  m_RootOrder: 1
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -726,7 +680,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1451340383}
-  m_RootOrder: 1
+  m_RootOrder: 5
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -990,7 +944,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -326, y: -74}
+  m_AnchoredPosition: {x: -249, y: -36}
   m_SizeDelta: {x: 256.29, y: 222.98}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &981125056
@@ -1206,13 +1160,111 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chemAns:
-  - correctAns: 01000000000000000200000000000000
+  - correctAns: 00000000000000000100000002000000
     questionAnswer:
-    - test
-    - tes
-    - test
+    - H2
+    - 0
+    - H20
     colour1: {r: 1, g: 0, b: 0, a: 1}
     colour2: {r: 0.0023497343, g: 1, b: 0, a: 1}
+  - correctAns: 01000000000000000000000002000000
+    questionAnswer:
+    - Na
+    - Cl
+    - NaCl
+    colour1: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
+    colour2: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
+  - correctAns: 00000000010000000000000002000000
+    questionAnswer:
+    - C
+    - O2
+    - CO2
+    colour1: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+    colour2: {r: 0.0046724924, g: 0.75681126, b: 0.990566, a: 1}
+  - correctAns: 00000000010000000200000000000000
+    questionAnswer:
+    - C
+    - H4
+    - CH4
+    colour1: {r: 0.21226418, g: 1, b: 0.2685464, a: 1}
+    colour2: {r: 0.3066038, g: 0.93232435, b: 1, a: 1}
+  - correctAns: 02000000000000000000000001000000
+    questionAnswer:
+    - H
+    - Cl
+    - HCl
+    colour1: {r: 0.8596137, g: 1, b: 0.2117647, a: 1}
+    colour2: {r: 0, g: 0.7169812, b: 0.18503116, a: 1}
+  - correctAns: 02000000010000000000000000000000
+    questionAnswer:
+    - N
+    - H2
+    - Nh2
+    colour1: {r: 0.8596137, g: 1, b: 0.2117647, a: 1}
+    colour2: {r: 0, g: 0.7169812, b: 0.18503116, a: 1}
+  - correctAns: 02000000010000000000000000000000
+    questionAnswer:
+    - C
+    - O2
+    - CO
+    colour1: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
+    colour2: {r: 0.07075471, g: 1, b: 0.96470165, a: 1}
+  - correctAns: 02000000000000000100000000000000
+    questionAnswer:
+    - N2
+    - O
+    - N2O
+    colour1: {r: 0.9811321, g: 0.5585473, b: 0.1064436, a: 1}
+    colour2: {r: 0.07075471, g: 1, b: 0.96470165, a: 1}
+  - correctAns: 00000000010000000000000002000000
+    questionAnswer:
+    - S
+    - F6
+    - SF6
+    colour1: {r: 0.9811321, g: 0.5585473, b: 0.1064436, a: 1}
+    colour2: {r: 0.07075471, g: 1, b: 0.96470165, a: 1}
+  - correctAns: 00000000010000000200000000000000
+    questionAnswer:
+    - O
+    - O
+    - O2
+    colour1: {r: 0.10588233, g: 0.98039216, b: 0.91059947, a: 1}
+    colour2: {r: 0.07075471, g: 1, b: 0.96470165, a: 1}
+  - correctAns: 02000000010000000000000000000000
+    questionAnswer:
+    - C2
+    - H4
+    - C2H4
+    colour1: {r: 0.10588233, g: 0.98039216, b: 0.91059947, a: 1}
+    colour2: {r: 0.078097194, g: 0.26874843, b: 0.4245283, a: 1}
+  - correctAns: 02000000010000000000000000000000
+    questionAnswer:
+    - H2
+    - S
+    - H2S
+    colour1: {r: 0.58214664, g: 0.5849056, b: 0.58468294, a: 1}
+    colour2: {r: 0.8867924, g: 0.8140748, b: 0.020914912, a: 1}
+  - correctAns: 02000000000000000100000000000000
+    questionAnswer:
+    - C2
+    - F4
+    - C2F4
+    colour1: {r: 0.31928623, g: 0.3301887, b: 0.32930866, a: 1}
+    colour2: {r: 0.42352942, g: 0.13737342, b: 0.078431375, a: 1}
+  - correctAns: 00000000000000000100000002000000
+    questionAnswer:
+    - S
+    - O2
+    - SO2
+    colour1: {r: 0.9528302, g: 0.0764062, b: 0.6644148, a: 1}
+    colour2: {r: 0.40810084, g: 0.8962264, b: 0.063412234, a: 1}
+  - correctAns: 00000000000000000100000002000000
+    questionAnswer:
+    - C2
+    - H4
+    - C2H4
+    colour1: {r: 0.50088674, g: 0.074509814, b: 0.9529412, a: 1}
+    colour2: {r: 0.03297438, g: 0.51328903, b: 0.5377358, a: 1}
   chemPrefab: {fileID: 644272308}
   spawnLocations:
   - {x: -1, y: -1.34}
@@ -1359,9 +1411,7 @@ Canvas:
   m_OverrideSorting: 0
   m_OverridePixelPerfect: 0
   m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
   m_AdditionalShaderChannelsFlag: 0
-  m_UpdateRectTransformForStandalone: 0
   m_SortingLayerID: 1695050747
   m_SortingOrder: 48
   m_TargetDisplay: 0
@@ -1423,7 +1473,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1451340383}
-  m_RootOrder: -1
+  m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
@@ -1477,7 +1527,6 @@ PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
-    serializedVersion: 3
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: 4530570723084288668, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
@@ -1537,9 +1586,6 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
-    m_RemovedGameObjects: []
-    m_AddedGameObjects: []
-    m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 8e756c0c81a4f7e4ea864c4a0927bf89, type: 3}
 --- !u!1 &1838349271
 GameObject:
@@ -1736,7 +1782,7 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1451340383}
-  m_RootOrder: 1
+  m_RootOrder: 4
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
