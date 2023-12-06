@@ -728,8 +728,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9e326c1aa4230594591e69718e381c31, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scoreValue: 0
-  playerMoney: {fileID: 11400000, guid: c1da4617583019b49863be774caec152, type: 2}
+  scoreValue: 14
   playerInfluence: {fileID: 11400000, guid: 4c4d49400bd24714a8051aa6e9d2f6e9, type: 2}
 --- !u!1 &965393418
 GameObject:
@@ -1890,7 +1889,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   currentTime: 0
-  startingTime: 10
+  startingTime: 15
   exitMinigame:
     m_PersistentCalls:
       m_Calls:

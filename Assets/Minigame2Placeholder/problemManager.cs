@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
 
 public class problemManager : MonoBehaviour
 {
@@ -8,9 +9,11 @@ public class problemManager : MonoBehaviour
     public GameObject chemPrefab;
     public Vector2[] spawnLocations;
     public List<GameObject> cloneList = new List<GameObject>();
+    public List<Text> textObjects;
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -46,13 +49,28 @@ public class problemManager : MonoBehaviour
         for (int i = 0; i < cloneList.Count; i++){
             if (chemAns[questionPicker].correctAns[i] == 1){
                 cloneList[i].tag = "chemicalGoal";
+                cloneList[i].GetComponent<Renderer>().material.color = chemAns[questionPicker].colour1;
             } else if (chemAns[questionPicker].correctAns[i] == 2){
                 cloneList[i].tag = "chemical";
+                cloneList[i].GetComponent<Renderer>().material.color = chemAns[questionPicker].colour2;
             } else {cloneList[i].tag = "notChemical";}
         }
+        setQuestion(questionPicker);
+    }
+
+    void setQuestion(int qPicker)
+    {
+        for (int x = 0; x != textObjects.Count; x++)
+        {
+            textObjects[x].text = chemAns[qPicker].questionAnswer[x];
+        }
+
     }
 }
 [System.Serializable]
 public class chemicalSet{
     public int[] correctAns;
+    public string[] questionAnswer;
+    public Color colour1;
+    public Color colour2;
 }
