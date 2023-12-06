@@ -1160,13 +1160,111 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   chemAns:
-  - correctAns: 01000000000000000200000000000000
+  - correctAns: 00000000000000000100000002000000
     questionAnswer:
-    - test
-    - tes
-    - test
+    - H2
+    - 0
+    - H20
     colour1: {r: 1, g: 0, b: 0, a: 1}
     colour2: {r: 0.0023497343, g: 1, b: 0, a: 1}
+  - correctAns: 01000000000000000000000002000000
+    questionAnswer:
+    - Na
+    - Cl
+    - NaCl
+    colour1: {r: 0.9150943, g: 0.9150943, b: 0.9150943, a: 1}
+    colour2: {r: 0.33962262, g: 0.33962262, b: 0.33962262, a: 1}
+  - correctAns: 00000000010000000000000002000000
+    questionAnswer:
+    - C
+    - O2
+    - CO2
+    colour1: {r: 0.4811321, g: 0.4811321, b: 0.4811321, a: 1}
+    colour2: {r: 0.0046724924, g: 0.75681126, b: 0.990566, a: 1}
+  - correctAns: 00000000010000000200000000000000
+    questionAnswer:
+    - C
+    - H4
+    - CH4
+    colour1: {r: 0.21226418, g: 1, b: 0.2685464, a: 1}
+    colour2: {r: 0.3066038, g: 0.93232435, b: 1, a: 1}
+  - correctAns: 02000000000000000000000001000000
+    questionAnswer:
+    - H
+    - Cl
+    - HCl
+    colour1: {r: 0.8596137, g: 1, b: 0.2117647, a: 1}
+    colour2: {r: 0, g: 0.7169812, b: 0.18503116, a: 1}
+  - correctAns: 02000000010000000000000000000000
+    questionAnswer:
+    - N
+    - H2
+    - Nh2
+    colour1: {r: 0.8596137, g: 1, b: 0.2117647, a: 1}
+    colour2: {r: 0, g: 0.7169812, b: 0.18503116, a: 1}
+  - correctAns: 02000000010000000000000000000000
+    questionAnswer:
+    - C
+    - O2
+    - CO
+    colour1: {r: 0.7264151, g: 0.7264151, b: 0.7264151, a: 1}
+    colour2: {r: 0.07075471, g: 1, b: 0.96470165, a: 1}
+  - correctAns: 02000000000000000100000000000000
+    questionAnswer:
+    - N2
+    - O
+    - N2O
+    colour1: {r: 0.9811321, g: 0.5585473, b: 0.1064436, a: 1}
+    colour2: {r: 0.07075471, g: 1, b: 0.96470165, a: 1}
+  - correctAns: 00000000010000000000000002000000
+    questionAnswer:
+    - S
+    - F6
+    - SF6
+    colour1: {r: 0.9811321, g: 0.5585473, b: 0.1064436, a: 1}
+    colour2: {r: 0.07075471, g: 1, b: 0.96470165, a: 1}
+  - correctAns: 00000000010000000200000000000000
+    questionAnswer:
+    - O
+    - O
+    - O2
+    colour1: {r: 0.10588233, g: 0.98039216, b: 0.91059947, a: 1}
+    colour2: {r: 0.07075471, g: 1, b: 0.96470165, a: 1}
+  - correctAns: 02000000010000000000000000000000
+    questionAnswer:
+    - C2
+    - H4
+    - C2H4
+    colour1: {r: 0.10588233, g: 0.98039216, b: 0.91059947, a: 1}
+    colour2: {r: 0.078097194, g: 0.26874843, b: 0.4245283, a: 1}
+  - correctAns: 02000000010000000000000000000000
+    questionAnswer:
+    - H2
+    - S
+    - H2S
+    colour1: {r: 0.58214664, g: 0.5849056, b: 0.58468294, a: 1}
+    colour2: {r: 0.8867924, g: 0.8140748, b: 0.020914912, a: 1}
+  - correctAns: 02000000000000000100000000000000
+    questionAnswer:
+    - C2
+    - F4
+    - C2F4
+    colour1: {r: 0.31928623, g: 0.3301887, b: 0.32930866, a: 1}
+    colour2: {r: 0.42352942, g: 0.13737342, b: 0.078431375, a: 1}
+  - correctAns: 00000000000000000100000002000000
+    questionAnswer:
+    - S
+    - O2
+    - SO2
+    colour1: {r: 0.9528302, g: 0.0764062, b: 0.6644148, a: 1}
+    colour2: {r: 0.40810084, g: 0.8962264, b: 0.063412234, a: 1}
+  - correctAns: 00000000000000000100000002000000
+    questionAnswer:
+    - C2
+    - H4
+    - C2H4
+    colour1: {r: 0.50088674, g: 0.074509814, b: 0.9529412, a: 1}
+    colour2: {r: 0.03297438, g: 0.51328903, b: 0.5377358, a: 1}
   chemPrefab: {fileID: 644272308}
   spawnLocations:
   - {x: -1, y: -1.34}
