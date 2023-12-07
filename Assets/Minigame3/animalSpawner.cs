@@ -17,6 +17,11 @@ public class animalSpawner : MonoBehaviour
     public class animalTypes{
         public List<Sprite> animalImgs;
     }
+    public void Start(){
+        for (int x = 0; x < 4; x++){
+        spawnAnimal();
+        }
+    }
     public void spawnAnimal(){
         tagIndex = Random.Range(0,4);
         spawnArea = new Vector2(Random.Range(-8.5f,-3f),Random.Range(-3.5f,4f));
