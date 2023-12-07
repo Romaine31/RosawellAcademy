@@ -1,6 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1 &638333292914831918
+--- !u!1 &7674959034358073285
 GameObject:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -8,8 +8,8 @@ GameObject:
   m_PrefabAsset: {fileID: 0}
   serializedVersion: 6
   m_Component:
-  - component: {fileID: 638333292914831912}
-  - component: {fileID: 638333292914831915}
+  - component: {fileID: 7674959034358073283}
+  - component: {fileID: 7674959034358073280}
   m_Layer: 0
   m_Name: npcScheduler
   m_TagString: npcScheduler
@@ -17,13 +17,13 @@ GameObject:
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
   m_IsActive: 1
---- !u!4 &638333292914831912
+--- !u!4 &7674959034358073283
 Transform:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638333292914831918}
+  m_GameObject: {fileID: 7674959034358073285}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 20, y: -18.5, z: -0.68732446}
   m_LocalScale: {x: 1, y: 1, z: 1}
@@ -32,13 +32,13 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &638333292914831915
+--- !u!114 &7674959034358073280
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 638333292914831918}
+  m_GameObject: {fileID: 7674959034358073285}
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 903c4d99778c39545aea0a0eb8d9493d, type: 3}
@@ -85,6 +85,23 @@ MonoBehaviour:
   - gameObjectLocations:
     - currentDestination: {fileID: 0}
   - gameObjectLocations:
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+  - gameObjectLocations:
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
+    - currentDestination: {fileID: 0}
     - currentDestination: {fileID: 0}
     - currentDestination: {fileID: 0}
     - currentDestination: {fileID: 0}

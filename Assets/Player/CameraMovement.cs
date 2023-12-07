@@ -11,6 +11,7 @@ public class CameraMovement : MonoBehaviour
     public cameraVectors startingBoundary;
     void Start()
     {
+        target = GameObject.FindWithTag("Player").transform;
         minPosition = startingBoundary.initialMinValue;
         maxPosition = startingBoundary.initialMaxValue; // sets initial camera boundary based off last saved values
     }

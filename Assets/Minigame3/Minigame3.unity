@@ -154,7 +154,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d34603c82081710408acd3e7a142c3d9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scores: {fileID: 0}
+  scores: {fileID: 717893636}
   spawnTrigger: {fileID: 1383935286}
 --- !u!61 &30791711
 BoxCollider2D:
@@ -242,7 +242,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 30791709}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.6, y: -0.79, z: 0}
+  m_LocalPosition: {x: 3.59, y: -0.93, z: 0}
   m_LocalScale: {x: 6.8850675, y: 0.4452294, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -457,7 +457,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -469, y: 260}
+  m_AnchoredPosition: {x: -320, y: 216.79}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717893634
@@ -594,7 +594,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a3a8e1518f971c94188da32ab0c00f19, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scores: {fileID: 0}
+  scores: {fileID: 717893636}
   spawnTrigger: {fileID: 1383935286}
 --- !u!61 &721659224
 BoxCollider2D:
@@ -682,7 +682,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 721659222}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.52, y: -3.65, z: 0}
+  m_LocalPosition: {x: 3.55, y: -3.6, z: 0}
   m_LocalScale: {x: 10.2001, y: 0.49355623, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1087,7 +1087,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 462, y: 254}
+  m_AnchoredPosition: {x: 320, y: 216.79}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1926682303
@@ -1138,7 +1138,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
+  m_UiScaleMode: 1
   m_ReferencePixelsPerUnit: 100
   m_ScaleFactor: 1
   m_ReferenceResolution: {x: 800, y: 600}
@@ -1223,7 +1223,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e4d81b90d87484f49ba728495c77e8e9, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scores: {fileID: 0}
+  scores: {fileID: 717893636}
   spawnTrigger: {fileID: 1383935286}
 --- !u!61 &2005498354
 BoxCollider2D:
@@ -1311,8 +1311,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2005498352}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.55, y: 1.61, z: 0}
-  m_LocalScale: {x: 4.3350425, y: 0.39681768, z: 1}
+  m_LocalPosition: {x: 3.46, y: 1.19, z: 0}
+  m_LocalScale: {x: 4.3350425, y: 0.41388083, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
@@ -1395,7 +1395,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2058479951}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.51, y: 0.36, z: 0}
+  m_LocalPosition: {x: 3.45, y: 0.05, z: 0}
   m_LocalScale: {x: 2.1863403, y: 1.9036173, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1507,7 +1507,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 2079163689}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.53, y: 3.77, z: 0}
+  m_LocalPosition: {x: 3.75, y: 3.16, z: 0}
   m_LocalScale: {x: 2.8050275, y: 0.34859082, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1526,5 +1526,5 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 20dc1e564e4c7c048b5cd5dd0fa7a30f, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  scores: {fileID: 0}
+  scores: {fileID: 717893636}
   spawnTrigger: {fileID: 1383935286}

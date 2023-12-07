@@ -115,7 +115,7 @@ MonoBehaviour:
   - scheduleTimeHour: 10
     scheduleTimeMinute: 0
     allowWander: 0
-  - scheduleTimeHour: 10
+  - scheduleTimeHour: 12
     scheduleTimeMinute: 3
     allowWander: 1
 --- !u!114 &304377590244742724
@@ -132,6 +132,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isCurrentlyWandering: 0
   walkRadius: 20
+  animator: {fileID: 0}
+  target: {x: 0, y: 0, z: 0}
+  npcInfo: {fileID: 0}
 --- !u!195 &3579418060379275094
 NavMeshAgent:
   m_ObjectHideFlags: 0
@@ -142,7 +145,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.5
-  m_Speed: 6
+  m_Speed: 3
   m_Acceleration: 8
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -166,12 +169,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 30eff58b5e716ed4b9d2c0bfdd72d62b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  namesDatabase: {fileID: 11400000, guid: d87ddefffaa2570439c0c60954a85d6e, type: 2}
   npcId: {fileID: 11400000, guid: 95b8d7426dd6fa649a9d0a91509f1525, type: 2}
   npcInfo: {fileID: 11400000, guid: 919b517285ff8ed4185307c4ac4a27db, type: 2}
   npcCurrentId: 0
   npcName: 
-  npcImage: {fileID: 0}
   npcAnimator: {fileID: 0}
 --- !u!95 &-4786805556879547919
 Animator:

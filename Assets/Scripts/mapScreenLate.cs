@@ -8,7 +8,7 @@ public class mapScreenLate : MonoBehaviour
     public timeValue worldTime;
     void Start()
     {
-        if (worldTime.Hour > 5){
+        if (worldTime.Hour > 17 || worldTime.Hour < 4){
             schoolButton.SetActive(false);
         } else {schoolButton.SetActive(true);}
     }
