@@ -115,7 +115,7 @@ MonoBehaviour:
   - scheduleTimeHour: 10
     scheduleTimeMinute: 0
     allowWander: 0
-  - scheduleTimeHour: 10
+  - scheduleTimeHour: 12
     scheduleTimeMinute: 3
     allowWander: 1
 --- !u!114 &304377590244742724

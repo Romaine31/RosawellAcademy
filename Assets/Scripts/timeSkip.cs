@@ -5,7 +5,7 @@ using UnityEngine;
 public class timeSkip : MonoBehaviour
 {
     public timeValue worldTime;
-    public int lessonSkip = 2;// hour
+    public int lessonSkip = 3;// hour
     public int travelSkip = 30;// mins
     public bool inLesson;
     
@@ -13,10 +13,10 @@ public class timeSkip : MonoBehaviour
     {
         if (inLesson == true)
         {
-            worldTime.Hour = lessonSkip;
+            worldTime.Hour += lessonSkip;
         } else if (inLesson == false)
         {
-            worldTime.Minute = travelSkip;
+            worldTime.Minute += travelSkip;
         }
     }
 }

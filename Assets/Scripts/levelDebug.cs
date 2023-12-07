@@ -8,14 +8,15 @@ public class levelDebug : MonoBehaviour
     public intValue playerLv;
     public void changeToLv1 (){
         playerLv.initialValue = 0;
-        SceneManager.LoadScene("School1");
+        SceneManager.LoadScene("mapScreen");
+        
     }
     public void changeToLv2 (){
         playerLv.initialValue = 1;
-        SceneManager.LoadScene("School2");
+        SceneManager.LoadScene("mapScreen");
     }
     public void changeToLv3 (){
         playerLv.initialValue = 2;
-        SceneManager.LoadScene("School3");
+        SceneManager.LoadScene("mapScreen");
     }
 }

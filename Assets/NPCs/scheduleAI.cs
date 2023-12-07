@@ -34,7 +34,7 @@ public class scheduleAI : MonoBehaviour
     
     void Update()
     {
-        if(currentTime.Hour == schedule[nextSchedule].scheduleTimeHour && currentTime.Hour == schedule[nextSchedule].scheduleTimeHour){
+        if(currentTime.Hour == schedule[nextSchedule].scheduleTimeHour && currentTime.Minute == schedule[nextSchedule].scheduleTimeMinute){
             areaDestinationIndex = Random.Range(0, destination.roomNumber[roomDestinationIndex].gameObjectLocations.Count);
             destinationReference = destination.roomNumber[roomDestinationIndex].gameObjectLocations[areaDestinationIndex].currentDestination;
             wanderCheck = schedule[nextSchedule].allowWander;
