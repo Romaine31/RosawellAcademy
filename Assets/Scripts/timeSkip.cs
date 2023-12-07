@@ -6,7 +6,7 @@ public class timeSkip : MonoBehaviour
 {
     public timeValue worldTime;
     public int lessonSkip = 3;// hour
-    public int travelSkip = 30;// mins
+    public int travelSkip = 0;// mins
     public bool inLesson;
     
     void OnDestroy()
