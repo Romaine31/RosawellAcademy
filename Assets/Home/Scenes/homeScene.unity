@@ -1369,6 +1369,14 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3894766455873466371, guid: 810ae1e3feb7cac4ab1e6cd5b5a8e3f6, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 7.37
+      objectReference: {fileID: 0}
+    - target: {fileID: 3894766455873466371, guid: 810ae1e3feb7cac4ab1e6cd5b5a8e3f6, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.23
+      objectReference: {fileID: 0}
     - target: {fileID: 3934039336711844788, guid: 810ae1e3feb7cac4ab1e6cd5b5a8e3f6, type: 3}
       propertyPath: m_SortingOrder
       value: 25
@@ -1696,7 +1704,7 @@ PrefabInstance:
     - target: {fileID: 425742005615185174, guid: 9ad928d421bb7094f9801be4b39b2179, type: 3}
       propertyPath: target
       value: 
-      objectReference: {fileID: 1789305736}
+      objectReference: {fileID: 0}
     - target: {fileID: 425742005615185174, guid: 9ad928d421bb7094f9801be4b39b2179, type: 3}
       propertyPath: maxPosition.x
       value: 5.45
@@ -3829,7 +3837,7 @@ TilemapRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: 24
+  m_SortingOrder: 5
   m_ChunkSize: {x: 32, y: 32, z: 32}
   m_ChunkCullingBounds: {x: 0, y: 0, z: 0}
   m_MaxChunkCount: 16
@@ -5168,11 +5176,6 @@ BoxCollider2D:
   serializedVersion: 2
   m_Size: {x: 2.3025918, y: 1.6332042}
   m_EdgeRadius: 0
---- !u!4 &1789305736 stripped
-Transform:
-  m_CorrespondingSourceObject: {fileID: 3934039336711844789, guid: 810ae1e3feb7cac4ab1e6cd5b5a8e3f6, type: 3}
-  m_PrefabInstance: {fileID: 439935966}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1971540391
 PrefabInstance:
   m_ObjectHideFlags: 0

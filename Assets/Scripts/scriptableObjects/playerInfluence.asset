@@ -12,4 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a20a9c755b2a1c540b93150889c9d2c8, type: 3}
   m_Name: playerInfluence
   m_EditorClassIdentifier: 
-  initialValue: 250
+  initialValue: 0

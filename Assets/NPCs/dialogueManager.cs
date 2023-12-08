@@ -12,7 +12,9 @@ public class dialogueManager : MonoBehaviour
     Message[] currentMessages;
     string currentActor;
     public int activeMessage = 0;
+    
     public static bool isActive = false;
+    public bool isActiveCheck;
 
 
     public void OpenDialogue(Message[] messages)
@@ -27,20 +29,20 @@ public class dialogueManager : MonoBehaviour
 
     public void NextMessage()
     {
-        
+        activeMessage++;
         if (activeMessage < currentMessages.Length)
         {
             DisplayMessage();
         }
         else
         {
-            // StartCoroutine(notActive());
-            isActive = false;
-            backgroundBox.SetActive(false);
+            StartCoroutine(notActive());
+            // backgroundBox.SetActive(false);
+            // isActive = false;
             // actorName.SetActive(false);
             // messageText.SetActive(false);
         }
-        activeMessage++;
+
     }
 
     void DisplayMessage()
@@ -61,6 +63,7 @@ public class dialogueManager : MonoBehaviour
 
     void Update()
     {
+        isActiveCheck = isActive;
         if (Input.GetKeyDown(KeyCode.E) && isActive == true)
         {
             NextMessage();
@@ -70,9 +73,10 @@ public class dialogueManager : MonoBehaviour
         // } else {Time.timeScale = 1;}
     }
 
-    // IEnumerator dialogueActive()
-    // {
-    //     yield return new WaitForSeconds(3);
-    //     Time.timeScale = 0;
-    // }
+    IEnumerator  notActive()
+    {
+        yield return new WaitForSeconds(0.5f);
+        backgroundBox.SetActive(false);
+        isActive = false;
+    }
 }
