@@ -11,16 +11,16 @@ public class MilestoneDetection : MonoBehaviour
     {
 
         switch (pInfluence.initialValue){
-            case 0:
+            case > 0 and < 200:
                 playerLevel.initialValue = 0;
                 break;
-            case 200:
+            case > 200 and < 700:
                 playerLevel.initialValue = 1;
                 break;
-            case 700:
+            case > 700 and < 1300:
                 playerLevel.initialValue = 2;
                 break;
-            case 1300:
+            case > 1300:
                 playerLevel.initialValue = 3;
                 break;
         }

@@ -7,7 +7,7 @@ public class dialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI actorName;
     public TextMeshProUGUI messageText;
-    public RectTransform backgroundBox;
+    public GameObject backgroundBox;
 
     Message[] currentMessages;
     string currentActor;
@@ -27,22 +27,27 @@ public class dialogueManager : MonoBehaviour
 
     public void NextMessage()
     {
-        activeMessage++;
+        
         if (activeMessage < currentMessages.Length)
         {
             DisplayMessage();
         }
         else
         {
-            StartCoroutine(notActive());
-            backgroundBox.transform.localScale = Vector3.zero;
+            // StartCoroutine(notActive());
+            isActive = false;
+            backgroundBox.SetActive(false);
+            // actorName.SetActive(false);
+            // messageText.SetActive(false);
         }
+        activeMessage++;
     }
 
     void DisplayMessage()
     {
         Message messageToDisplay = currentMessages[activeMessage];
         messageText.text = messageToDisplay.message;
+        backgroundBox.SetActive(true);
 
         //actorName.text = currentActor;
         actorName.text = "test";
@@ -50,7 +55,7 @@ public class dialogueManager : MonoBehaviour
 
     void Start()
     {
-        backgroundBox.transform.localScale = Vector3.zero;
+
     }
 
 
@@ -60,11 +65,14 @@ public class dialogueManager : MonoBehaviour
         {
             NextMessage();
         }
+        // if (isActive == true){
+        //    StartCoroutine(dialogueActive());
+        // } else {Time.timeScale = 1;}
     }
 
-    IEnumerator notActive()
-    {
-        yield return new WaitForSeconds(1);
-        isActive = false;
-    }
+    // IEnumerator dialogueActive()
+    // {
+    //     yield return new WaitForSeconds(3);
+    //     Time.timeScale = 0;
+    // }
 }

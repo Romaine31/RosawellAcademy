@@ -19,9 +19,10 @@ public class Timer : MonoBehaviour
 
     void Update()
     {
-        currentTime -= 1 * Time.deltaTime;
-        countdownText.text = currentTime.ToString ("0");
-
+        if (dialogueManager.isActive == false){
+            currentTime -= 1 * Time.deltaTime;
+            countdownText.text = currentTime.ToString ("0");
+        }
         if (currentTime <= 0)
         {
             currentTime = 0;

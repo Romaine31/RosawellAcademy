@@ -419,7 +419,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   worldTime: {fileID: 11400000, guid: dd1662c691332694c8eb57a5490c74e8, type: 2}
   lessonSkip: 2
-  travelSkip: 30
+  travelSkip: 0
   inLesson: 0
 --- !u!4 &276142942
 Transform:
