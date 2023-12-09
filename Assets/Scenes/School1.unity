@@ -19069,6 +19069,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: tutorialDialogue
       objectReference: {fileID: 0}
+    - target: {fileID: 5267508522434824489, guid: 607a97a5355405e43ae9e23f45dfca24, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5267508522434824492, guid: 607a97a5355405e43ae9e23f45dfca24, type: 3}
       propertyPath: m_RootOrder
       value: 17
@@ -19152,6 +19156,10 @@ PrefabInstance:
       propertyPath: actorName
       value: 
       objectReference: {fileID: 671152961}
+    - target: {fileID: 5267508522434824495, guid: 607a97a5355405e43ae9e23f45dfca24, type: 3}
+      propertyPath: m_Enabled
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 5267508522434824495, guid: 607a97a5355405e43ae9e23f45dfca24, type: 3}
       propertyPath: messageText
       value: 

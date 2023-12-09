@@ -52,7 +52,7 @@ public class dialogueManager : MonoBehaviour
         backgroundBox.SetActive(true);
 
         //actorName.text = currentActor;
-        actorName.text = "test";
+        actorName.text = "principal";
     }
 
     void Start()
