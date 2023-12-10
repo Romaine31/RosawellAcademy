@@ -19,4 +19,8 @@ public class levelDebug : MonoBehaviour
         playerLv.initialValue = 2;
         SceneManager.LoadScene("mapScreen");
     }
+    public void changeToLv4 (){
+        playerLv.initialValue = 3;
+        SceneManager.LoadScene("mapScreen");
+    }
 }

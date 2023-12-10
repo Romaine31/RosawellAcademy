@@ -14,8 +14,8 @@ public class populateNpcDetail : MonoBehaviour
             for (int x = 0; x < npcInfo.npcValues.Length; x++) {
                 npcInfo.npcValues[x].name = namesStorage.stringVal[Random.Range(0, namesStorage.stringVal.Count)];
                 npcInfo.npcValues[x].animController = animStorage.charController[Random.Range(0, animStorage.charController.Count)];
-                npcInfo.npcValues[x].multiplier = 1;
-                npcInfo.npcValues[x].admiration = 1;
+                // npcInfo.npcValues[x].multiplier = 1;
+                // npcInfo.npcValues[x].admiration = 1;
             }
             npcsSpawned.initialValue = true;
         }
