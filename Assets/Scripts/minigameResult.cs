@@ -32,6 +32,5 @@ public class minigameResult : MonoBehaviour
         scoreText.text = pScore.scoreValue.ToString();
         resultImg.SetActive(true);
         resultsOn = true;
-        Time.timeScale = 0;
     }
 }
