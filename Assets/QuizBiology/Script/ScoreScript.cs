@@ -8,7 +8,6 @@ public class ScoreScript : MonoBehaviour
 {
     public int scoreValue;
     Text score;
-    int finalscore;
     public floatValue playerInfluence;
 
     // Start is called before the first frame update

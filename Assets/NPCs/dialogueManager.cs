@@ -7,12 +7,14 @@ public class dialogueManager : MonoBehaviour
 {
     public TextMeshProUGUI actorName;
     public TextMeshProUGUI messageText;
-    public RectTransform backgroundBox;
+    public GameObject backgroundBox;
 
     Message[] currentMessages;
     string currentActor;
     public int activeMessage = 0;
+    
     public static bool isActive = false;
+    public bool isActiveCheck;
 
 
     public void OpenDialogue(Message[] messages)
@@ -35,36 +37,46 @@ public class dialogueManager : MonoBehaviour
         else
         {
             StartCoroutine(notActive());
-            backgroundBox.transform.localScale = Vector3.zero;
+            // backgroundBox.SetActive(false);
+            // isActive = false;
+            // actorName.SetActive(false);
+            // messageText.SetActive(false);
         }
+
     }
 
     void DisplayMessage()
     {
         Message messageToDisplay = currentMessages[activeMessage];
         messageText.text = messageToDisplay.message;
+        backgroundBox.SetActive(true);
 
         //actorName.text = currentActor;
-        actorName.text = "test";
+        actorName.text = "principal";
     }
 
     void Start()
     {
-        backgroundBox.transform.localScale = Vector3.zero;
+
     }
 
 
     void Update()
     {
+        isActiveCheck = isActive;
         if (Input.GetKeyDown(KeyCode.E) && isActive == true)
         {
             NextMessage();
         }
+        // if (isActive == true){
+        //    StartCoroutine(dialogueActive());
+        // } else {Time.timeScale = 1;}
     }
 
-    IEnumerator notActive()
+    IEnumerator  notActive()
     {
-        yield return new WaitForSeconds(1);
+        yield return new WaitForSeconds(0.5f);
+        backgroundBox.SetActive(false);
         isActive = false;
     }
 }

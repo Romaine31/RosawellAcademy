@@ -6,8 +6,8 @@ public class nextDay : MonoBehaviour
 {
     public timeValue worldTime;
     public void startNextDay(){
-        worldTime.Hour = 6;
-        worldTime.Minute = 30;
+        worldTime.Hour = 7;
+        worldTime.Minute = 00;
         worldTime.Day += 1;
     }
 }
