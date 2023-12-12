@@ -535,6 +535,26 @@ PrefabInstance:
       propertyPath: m_Name
       value: resultPanel
       objectReference: {fileID: 0}
+    - target: {fileID: 5387300004274821323, guid: 94a2adbf52433bb45a3e535b55044617, type: 3}
+      propertyPath: m_RootOrder
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387300004274821323, guid: 94a2adbf52433bb45a3e535b55044617, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 2.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387300004274821323, guid: 94a2adbf52433bb45a3e535b55044617, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 2.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387300004274821323, guid: 94a2adbf52433bb45a3e535b55044617, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 2.15
+      objectReference: {fileID: 0}
+    - target: {fileID: 5387300004274821323, guid: 94a2adbf52433bb45a3e535b55044617, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 94a2adbf52433bb45a3e535b55044617, type: 3}
 --- !u!224 &659833765 stripped
@@ -581,15 +601,15 @@ RectTransform:
   m_GameObject: {fileID: 717893632}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.5375, y: 2.5375, z: 2.5375}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1926682307}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 1}
   m_AnchorMax: {x: 0, y: 1}
-  m_AnchoredPosition: {x: 97, y: -27}
+  m_AnchoredPosition: {x: 226, y: -46}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &717893634
@@ -1485,15 +1505,15 @@ RectTransform:
   m_GameObject: {fileID: 1823279772}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
+  m_LocalScale: {x: 2.5375, y: 2.5375, z: 2.5375}
+  m_ConstrainProportionsScale: 1
   m_Children: []
   m_Father: {fileID: 1926682307}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 1, y: 1}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -103, y: -27}
+  m_AnchoredPosition: {x: -231, y: -41}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1898877177 stripped
