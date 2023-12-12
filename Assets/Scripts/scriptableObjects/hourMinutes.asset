@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: hourMinutes
   m_EditorClassIdentifier: 
   Quarter: 1
-  Day: 2
-  Hour: 11
-  Minute: 19
+  Day: 1
+  Hour: 9
+  Minute: 32
