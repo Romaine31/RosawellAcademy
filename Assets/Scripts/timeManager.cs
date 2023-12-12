@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Events;
 using TMPro;
 
 public class timeManager : MonoBehaviour
@@ -9,6 +10,8 @@ public class timeManager : MonoBehaviour
     private float minuteToRealtime = 5f;
     private float timer;
     public TextMeshProUGUI timeText;
+    public UnityEvent sendHome;
+
 
     void Start()
     {
@@ -27,7 +30,7 @@ public class timeManager : MonoBehaviour
             {
                 worldTime.Hour++;
                 worldTime.Minute = 0;
-                if (worldTime.Hour >= 24)
+                if (worldTime.Hour >= 23)
                 {
                     worldTime.Day++;
                     worldTime.Hour = 0;
@@ -41,10 +44,15 @@ public class timeManager : MonoBehaviour
             timer = minuteToRealtime;
             UpdateClockUI();
         }
+
+        if(worldTime.Hour >= 18){
+            sendHome.Invoke();
+        }
     }
 
     void UpdateClockUI()
     {
         timeText.text = $"{worldTime.Hour:00}:{worldTime.Minute:00}";
     }
+    
 }

@@ -8,6 +8,8 @@ using System.Collections;
         private Vector3 offset;
         public problemManager probManager;
         public ScoreScript scores;
+        public AudioSource correctAns;
+        public AudioSource wrongAns;
 
         public GameObject chemical3; // The object to be instantiated when collision occurs
         
@@ -19,6 +21,8 @@ using System.Collections;
         void OnEnable() {
             probManager = GameObject.FindWithTag("chemGameManager").GetComponent<problemManager>();
             scores = GameObject.FindWithTag("scoreText").GetComponent<ScoreScript>();
+            correctAns = GameObject.FindWithTag("cAudio").GetComponent<AudioSource>();
+            wrongAns = GameObject.FindWithTag("wAudio").GetComponent<AudioSource>();
         }
 
         void Update()
@@ -61,6 +65,7 @@ using System.Collections;
                     for (int i = 0; i < probManager.cloneList.Count; i++){
                     Destroy(probManager.cloneList[i]);
                     }
+                    correctAns.Play(0);
                     scores.scoreValue += 1;
                     probManager.cloneList = new List<GameObject>();
                     return true;
@@ -68,6 +73,7 @@ using System.Collections;
                     for (int i = 0; i < probManager.cloneList.Count; i++){
                     Destroy(probManager.cloneList[i]);
                     }
+                    wrongAns.Play(0);
                     probManager.cloneList = new List<GameObject>();
                     if (scores.scoreValue > 0){
                         scores.scoreValue -= 1;

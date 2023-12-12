@@ -101,6 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: c32dd042a370f14469db2ea1048ec48d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  schedStorage: {fileID: 11400000, guid: 48e96e4cedaa3064f8042d41fc6f66de, type: 2}
   currentTime: {fileID: 11400000, guid: dd1662c691332694c8eb57a5490c74e8, type: 2}
   destination: {fileID: 0}
   nextSchedule: 0
@@ -111,16 +112,21 @@ MonoBehaviour:
   schedule:
   - scheduleTimeHour: 7
     scheduleTimeMinute: 0
+    desiredRoomIndex: 0
     allowWander: 0
-  - scheduleTimeHour: 10
+  - scheduleTimeHour: 9
     scheduleTimeMinute: 0
+    desiredRoomIndex: 3
     allowWander: 0
-  - scheduleTimeHour: 10
+  - scheduleTimeHour: 11
+    scheduleTimeMinute: 0
+    desiredRoomIndex: 1
+    allowWander: 0
+  - scheduleTimeHour: 11
     scheduleTimeMinute: 3
+    desiredRoomIndex: 2
     allowWander: 1
-  - scheduleTimeHour: 12
-    scheduleTimeMinute: 0
-    allowWander: 0
+  testValue: 0
 --- !u!114 &304377590244742724
 MonoBehaviour:
   m_ObjectHideFlags: 0

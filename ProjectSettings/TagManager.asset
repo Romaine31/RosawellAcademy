@@ -17,6 +17,8 @@ TagManager:
   - scoreText
   - fruit
   - vegetable
+  - cAudio
+  - wAudio
   layers:
   - Default
   - TransparentFX
