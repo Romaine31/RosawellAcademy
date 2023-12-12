@@ -9,7 +9,7 @@ public class tierTertiary : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other){
         if (other.gameObject.CompareTag("animalTertiary")){
             scores.scoreValue += 1;
-            Destroy(other.gameObject);
+            Destroy(other);
             spawnTrigger.spawnAnimal();
         } else if (!other.gameObject.CompareTag("animalTertiary")){
             scores.scoreValue -= 1;

@@ -10,7 +10,7 @@ public class dialogueManager : MonoBehaviour
     public GameObject backgroundBox;
 
     Message[] currentMessages;
-    string currentActor;
+    public string currentActor;
     public int activeMessage = 0;
     
     public static bool isActive = false;
@@ -52,7 +52,7 @@ public class dialogueManager : MonoBehaviour
         backgroundBox.SetActive(true);
 
         //actorName.text = currentActor;
-        actorName.text = "principal";
+        actorName.text = currentActor;
     }
 
     void Start()

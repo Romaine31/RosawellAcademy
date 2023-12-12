@@ -14,8 +14,9 @@ public class npcSpawner : MonoBehaviour
     }
     void Start()
     {
+        var newRotation = new Quaternion(0,0,0,0);
             for (int x = 0; x < spawnAmount; x++){
-                Instantiate(npcPrefab, transform.position, Quaternion.identity);
+                Instantiate(npcPrefab, transform.position, newRotation);
                 Debug.Log("npc count: "+x);
                 npcID.initialValue++;
             }
