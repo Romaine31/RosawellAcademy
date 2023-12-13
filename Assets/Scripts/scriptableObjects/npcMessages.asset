@@ -12,4 +12,35 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: daf7f16f3a2f9544a9f239329a3dda15, type: 3}
   m_Name: npcMessages
   m_EditorClassIdentifier: 
-  messages: []
+  messages:
+  - Hello, Sir Marcus!
+  - Oh, I forgot my assignment hehe.
+  - Good Morning, Sir Marcus!
+  - I wish the next topic would be fun.
+  - "Yo! Sir Marcus! What\u2019s up!"
+  - Hayys, I need to finish my work.
+  - I need to ask my classmate for some ideas.
+  - I need to collect funds for the class.
+  - I need to study.
+  - "Maybe, I\u2019ll go eat after school."
+  - "After this, I\u2019ll go play basketball with the boys."
+  - "I\u2019ll play some pool after."
+  - 'I hope I can pass the exam. '
+  - I'll do the project right before the deadline.
+  - 'The cafeteria food is a bit bland today. '
+  - I'm so tired.
+  - Do we have to take notes?
+  - I hate Mondays.
+  - I wish the weekend would come faster.
+  - Do we have any group projects?
+  - I can't wait for the school holidays.
+  - I think I'm going to fail this test.
+  - I wish I had a shorter commute to school.
+  - Is it Friday yet?
+  - Is the teacher going to collect the homework?
+  - I wish we had more field trips.
+  - I can't believe summer vacation is so far away
+  - Why is the Wi-Fi so slow?
+  - I hope there's no pop quiz today.
+  - I need a new backpack; mine is falling apart.
+  - ' think my backpack weighs more than I do'
