@@ -12,7 +12,11 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject PauseMenuUI;
     public List<GameObject> itemList;
     public boolList itemCheck;
+    public GameObject settingMenu;
 
+    void OnEnable(){
+        settingMenu.SetActive(false);
+    }
     // Update is called once per frame
     void Update()
     {

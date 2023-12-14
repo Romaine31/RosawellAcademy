@@ -130,17 +130,25 @@ MonoBehaviour:
     scheduleTimeMinute: 30
     desiredRoomIndex: 4
     allowWander: 0
-  - scheduleTimeHour: 2
+  - scheduleTimeHour: 14
     scheduleTimeMinute: 30
     desiredRoomIndex: 5
     allowWander: 0
-  - scheduleTimeHour: 5
+  - scheduleTimeHour: 17
     scheduleTimeMinute: 0
-    desiredRoomIndex: 2
+    desiredRoomIndex: 5
     allowWander: 0
-  - scheduleTimeHour: 5
+  - scheduleTimeHour: 17
     scheduleTimeMinute: 3
-    desiredRoomIndex: 3
+    desiredRoomIndex: 5
+    allowWander: 1
+  - scheduleTimeHour: 18
+    scheduleTimeMinute: 0
+    desiredRoomIndex: 6
+    allowWander: 1
+  - scheduleTimeHour: 20
+    scheduleTimeMinute: 0
+    desiredRoomIndex: 6
     allowWander: 1
   testValue: 0
 --- !u!114 &304377590244742724

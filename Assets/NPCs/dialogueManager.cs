@@ -20,7 +20,10 @@ public class dialogueManager : MonoBehaviour
     public void OpenDialogue(Message[] messages)
     {
         currentMessages = messages;
-        //currentActor = GetComponent<npcDataHolder>().npcCurrentId.ToString();
+        // if (gameObject.tag == "students"){
+        // currentActor = GetComponent<npcDataHolder>().npcName;
+
+        // }
         activeMessage = 0;
         isActive = true;
         Debug.Log("started conversation! Loaded messages: " + messages.Length);

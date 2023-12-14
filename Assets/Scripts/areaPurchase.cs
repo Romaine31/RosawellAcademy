@@ -12,6 +12,7 @@ public class areaPurchase : MonoBehaviour
     public GameObject currentItem;
     public GameObject buyNotif;
     public Text buyText;
+    public floatValue playerMulti;
 
     void Start(){
         buyNotif.SetActive(false);
@@ -24,6 +25,7 @@ public class areaPurchase : MonoBehaviour
             StartCoroutine(displayNotif());
             boolToToggle.storeItem[itemIndex] = true;
             playerMoney.initialValue -= requiredValue;
+            playerMulti.initialValue += 0.1f;
             Destroy(currentItem);
         } else {
             buyText.text = "you don't have enough money, Required: " + requiredValue;

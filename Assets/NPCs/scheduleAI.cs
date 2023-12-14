@@ -37,7 +37,7 @@ public class scheduleAI : MonoBehaviour
     
     void Update()
     {
-        if(currentTime.Hour >= schedule[nextSchedule].scheduleTimeHour & currentTime.Hour < schedule[nextSchedule+1].scheduleTimeHour & currentTime.Minute >= schedule[nextSchedule].scheduleTimeMinute & currentTime.Minute < 60){
+        if(currentTime.Hour >= schedule[nextSchedule].scheduleTimeHour & currentTime.Hour < schedule[nextSchedule+1].scheduleTimeHour+1 & currentTime.Minute >= schedule[nextSchedule].scheduleTimeMinute & currentTime.Minute < 60){
             schedStorage.initialValue = nextSchedule;
             roomDestinationIndex = schedule[nextSchedule].desiredRoomIndex;
             areaDestinationIndex = Random.Range(0, destination.roomNumber[roomDestinationIndex].gameObjectLocations.Count);

@@ -1392,6 +1392,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5267508522434824493, guid: 607a97a5355405e43ae9e23f45dfca24, type: 3}
+      propertyPath: tutorialStatus
+      value: 
+      objectReference: {fileID: 11400000, guid: 65c79796ff456024dbd359e9021b23a5, type: 2}
+    - target: {fileID: 5267508522434824493, guid: 607a97a5355405e43ae9e23f45dfca24, type: 3}
+      propertyPath: turnOffThisTutorial
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5267508522434824494, guid: 607a97a5355405e43ae9e23f45dfca24, type: 3}
       propertyPath: messages.Array.size
       value: 1

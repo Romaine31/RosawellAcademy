@@ -6,11 +6,15 @@ using UnityEngine.Events;
 public class tutorialCheck : MonoBehaviour
 {
     public boolValue tutorialStatus;
+    public bool turnOffThisTutorial;
     public UnityEvent interactAction;
     void Start()
     {
-        if (tutorialStatus == true){
+        if (tutorialStatus.initialValue == true){
             interactAction.Invoke();
+        }
+        if (turnOffThisTutorial == true){
+            tutorialStatus.initialValue = false;
         }
     }
 

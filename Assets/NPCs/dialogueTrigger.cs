@@ -6,11 +6,17 @@ using UnityEngine.UI;
 public class dialogueTrigger : MonoBehaviour
 {
     public Message[] messages;
-
+    public string randMsg;
+    public stringList npcGenMessages;
     public void StartDialogue()
     {
         FindObjectOfType<dialogueManager>().OpenDialogue(messages);
     }
+    // public void StartDialogueRandom(){
+    //     var x = Random.Range(0, npcGenMessages.messages.Length);
+    //     randMsg = npcGenMessages.messages[x];
+    //     FindObjectOfType<dialogueManager>().OpenDialogue(randMsg);
+    // }
     
 }
     [System.Serializable]
