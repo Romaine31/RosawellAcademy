@@ -48,6 +48,7 @@ public class simpleAI : MonoBehaviour
         animator.SetFloat("Horizontal",movement.x);
         animator.SetFloat("Vertical",movement.y);
         animator.SetFloat("Speed",movement.magnitude);
+        
     }
     
     Vector2 npcWander() {

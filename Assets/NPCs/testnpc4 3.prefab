@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 8053553708193514286}
   - component: {fileID: -4786805556879547919}
   m_Layer: 0
-  m_Name: testnpc4
+  m_Name: testnpc4 3
   m_TagString: students
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -112,11 +112,11 @@ MonoBehaviour:
   schedule:
   - scheduleTimeHour: 7
     scheduleTimeMinute: 0
-    desiredRoomIndex: 0
+    desiredRoomIndex: 5
     allowWander: 0
   - scheduleTimeHour: 9
     scheduleTimeMinute: 0
-    desiredRoomIndex: 3
+    desiredRoomIndex: 0
     allowWander: 0
   - scheduleTimeHour: 11
     scheduleTimeMinute: 0
@@ -128,19 +128,19 @@ MonoBehaviour:
     allowWander: 1
   - scheduleTimeHour: 11
     scheduleTimeMinute: 30
-    desiredRoomIndex: 4
+    desiredRoomIndex: 3
     allowWander: 0
   - scheduleTimeHour: 14
     scheduleTimeMinute: 30
-    desiredRoomIndex: 0
+    desiredRoomIndex: 3
     allowWander: 0
   - scheduleTimeHour: 17
     scheduleTimeMinute: 0
-    desiredRoomIndex: 5
+    desiredRoomIndex: 4
     allowWander: 0
   - scheduleTimeHour: 17
     scheduleTimeMinute: 3
-    desiredRoomIndex: 5
+    desiredRoomIndex: 4
     allowWander: 1
   - scheduleTimeHour: 18
     scheduleTimeMinute: 0

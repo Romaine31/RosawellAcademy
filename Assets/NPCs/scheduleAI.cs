@@ -37,6 +37,7 @@ public class scheduleAI : MonoBehaviour
     
     void Update()
     {
+        
         if(currentTime.Hour >= schedule[nextSchedule].scheduleTimeHour & currentTime.Hour < schedule[nextSchedule+1].scheduleTimeHour+1 & currentTime.Minute >= schedule[nextSchedule].scheduleTimeMinute & currentTime.Minute < 60){
             schedStorage.initialValue = nextSchedule;
             roomDestinationIndex = schedule[nextSchedule].desiredRoomIndex;
@@ -45,6 +46,9 @@ public class scheduleAI : MonoBehaviour
             wanderCheck = schedule[nextSchedule].allowWander;
             Debug.Log(schedule[nextSchedule]);
             nextSchedule++;
+        } else if (destinationReference == null){
+            nextSchedule++;
         }
     }
+
 }
